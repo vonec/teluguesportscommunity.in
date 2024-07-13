@@ -1,0 +1,302 @@
+[
+    {
+        "battleimage": "/images/others/upcoming-game-thumb1.webp",
+        "battlename": "Panda",
+        "teamplayers": [
+            {
+                "teamImage": "/images/others/players1.webp"
+            },
+            {
+                "teamImage": "/images/others/players2.webp"
+            },
+            {
+                "teamImage": "/images/others/players3.webp"
+            },
+            {
+                "teamImage": "/images/others/players4.webp"
+            },
+            {
+                "teamImage": "/images/others/players5.webp"
+            },
+            {
+                "teamImage": "/images/others/players6.webp"
+            },
+            {
+                "teamImage": "/images/others/players2.webp"
+            },
+            {
+                "teamImage": "/images/others/players4.webp"
+            }
+        ]
+    },
+    {
+        "battleimage": "/images/others/upcoming-game-thumb2.webp",
+        "battlename": "Ninja",
+        "teamplayers": [
+            {
+                "teamImage": "/images/others/players4.webp"
+            },
+            {
+                "teamImage": "/images/others/players3.webp"
+            },
+            {
+                "teamImage": "/images/others/players2.webp"
+            },
+            {
+                "teamImage": "/images/others/players1.webp"
+            },
+            {
+                "teamImage": "/images/others/players5.webp"
+            },
+            {
+                "teamImage": "/images/others/players6.webp"
+            },
+            {
+                "teamImage": "/images/others/players2.webp"
+            },
+            {
+                "teamImage": "/images/others/players4.webp"
+            }
+        ]
+    },
+    {
+        "battleimage": "/images/others/upcoming-game-thumb3.webp",
+        "battlename": "Anonymous",
+        "teamplayers": [
+            {
+                "teamImage": "/images/others/players5.webp"
+            },
+            {
+                "teamImage": "/images/others/players2.webp"
+            },
+            {
+                "teamImage": "/images/others/players3.webp"
+            },
+            {
+                "teamImage": "/images/others/players4.webp"
+            },
+            {
+                "teamImage": "/images/others/players1.webp"
+            },
+            {
+                "teamImage": "/images/others/players6.webp"
+            },
+            {
+                "teamImage": "/images/others/players2.webp"
+            },
+            {
+                "teamImage": "/images/others/players4.webp"
+            }
+        ]
+    },
+    {
+        "battleimage": "/images/others/upcoming-game-thumb4.webp",
+        "battlename": "Gamer",
+        "teamplayers": [
+            {
+                "teamImage": "/images/others/players1.webp"
+            },
+            {
+                "teamImage": "/images/others/players6.webp"
+            },
+            {
+                "teamImage": "/images/others/players3.webp"
+            },
+            {
+                "teamImage": "/images/others/players4.webp"
+            },
+            {
+                "teamImage": "/images/others/players5.webp"
+            },
+            {
+                "teamImage": "/images/others/players2.webp"
+            },
+            {
+                "teamImage": "/images/others/players2.webp"
+            },
+            {
+                "teamImage": "/images/others/players4.webp"
+            }
+        ]
+    },
+    {
+        "battleimage": "/images/others/upcoming-game-thumb5.webp",
+        "battlename": "Holigans",
+        "teamplayers": [
+            {
+                "teamImage": "/images/others/players1.webp"
+            },
+            {
+                "teamImage": "/images/others/players2.webp"
+            },
+            {
+                "teamImage": "/images/others/players5.webp"
+            },
+            {
+                "teamImage": "/images/others/players4.webp"
+            },
+            {
+                "teamImage": "/images/others/players3.webp"
+            },
+            {
+                "teamImage": "/images/others/players6.webp"
+            },
+            {
+                "teamImage": "/images/others/players2.webp"
+            },
+            {
+                "teamImage": "/images/others/players4.webp"
+            }
+        ]
+    },
+    {
+        "battleimage": "/images/others/upcoming-game-thumb6.webp",
+        "battlename": "Bull",
+        "teamplayers": [
+            {
+                "teamImage": "/images/others/players4.webp"
+            },
+            {
+                "teamImage": "/images/others/players2.webp"
+            },
+            {
+                "teamImage": "/images/others/players3.webp"
+            },
+            {
+                "teamImage": "/images/others/players1.webp"
+            },
+            {
+                "teamImage": "/images/others/players5.webp"
+            },
+            {
+                "teamImage": "/images/others/players6.webp"
+            },
+            {
+                "teamImage": "/images/others/players2.webp"
+            },
+            {
+                "teamImage": "/images/others/players4.webp"
+            }
+        ]
+    },
+    {
+        "battleimage": "/images/others/upcoming-game-thumb7.webp",
+        "battlename": "Werewolf",
+        "teamplayers": [
+            {
+                "teamImage": "/images/others/players1.webp"
+            },
+            {
+                "teamImage": "/images/others/players6.webp"
+            },
+            {
+                "teamImage": "/images/others/players3.webp"
+            },
+            {
+                "teamImage": "/images/others/players4.webp"
+            },
+            {
+                "teamImage": "/images/others/players5.webp"
+            },
+            {
+                "teamImage": "/images/others/players2.webp"
+            },
+            {
+                "teamImage": "/images/others/players2.webp"
+            },
+            {
+                "teamImage": "/images/others/players4.webp"
+            }
+        ]
+    },
+    {
+        "battleimage": "/images/others/upcoming-game-thumb8.webp",
+        "battlename": "Monster",
+        "teamplayers": [
+            {
+                "teamImage": "/images/others/players1.webp"
+            },
+            {
+                "teamImage": "/images/others/players4.webp"
+            },
+            {
+                "teamImage": "/images/others/players3.webp"
+            },
+            {
+                "teamImage": "/images/others/players2.webp"
+            },
+            {
+                "teamImage": "/images/others/players5.webp"
+            },
+            {
+                "teamImage": "/images/others/players6.webp"
+            },
+            {
+                "teamImage": "/images/others/players2.webp"
+            },
+            {
+                "teamImage": "/images/others/players4.webp"
+            }
+        ]
+    },
+    {
+        "battleimage": "/images/others/upcoming-game-thumb9.webp",
+        "battlename": "Nocturnal",
+        "teamplayers": [
+            {
+                "teamImage": "/images/others/players1.webp"
+            },
+            {
+                "teamImage": "/images/others/players2.webp"
+            },
+            {
+                "teamImage": "/images/others/players3.webp"
+            },
+            {
+                "teamImage": "/images/others/players4.webp"
+            },
+            {
+                "teamImage": "/images/others/players3.webp"
+            },
+            {
+                "teamImage": "/images/others/players6.webp"
+            },
+            {
+                "teamImage": "/images/others/players2.webp"
+            },
+            {
+                "teamImage": "/images/others/players4.webp"
+            }
+        ]
+    },
+    {
+        "battleimage": "/images/others/upcoming-game-thumb10.webp",
+        "battlename": "The Dueeens",
+        "teamplayers": [
+            {
+                "teamImage": "/images/others/players1.webp"
+            },
+            {
+                "teamImage": "/images/others/players2.webp"
+            },
+            {
+                "teamImage": "/images/others/players3.webp"
+            },
+            {
+                "teamImage": "/images/others/players4.webp"
+            },
+            {
+                "teamImage": "/images/others/players5.webp"
+            },
+            {
+                "teamImage": "/images/others/players6.webp"
+            },
+            {
+                "teamImage": "/images/others/players2.webp"
+            },
+            {
+                "teamImage": "/images/others/players4.webp"
+            }
+        ]
+    }
+]
