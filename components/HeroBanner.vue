@@ -9,16 +9,20 @@
         class="relative 2xl:pt-20 lg:pt-16 md:pt-10 sm:pt-8 pt-8 md:mb-12 z-10 flex flex-col justify-center items-center lg:items-start lg:text-left text-center"
       >
         <h1
-          class="text-white font-blackOps uppercase font-normal 2xl:text-7.5xl xl:text-8xl lg:text-5.5xl md:text-7xl text-5xl tracking-wide xl:mb-10 lg:mb-8 mb-5 text-shadow"
+          class="text-white font-blackOps uppercase font-normal 2xl:text-7xl xl:text-6xl text-5xl tracking-wide xl:mb-10 lg:mb-8 mb-5 text-shadow"
         >
           Unite <br />
           Nurture<br />
           Promote<br />
         </h1>
         <p
-          class="text-white font-semibold font-exo lg:mb-10 md:mb-6 text-base lg:text-2xl mb-5"
+          class="text-white font-semibold font-exo lg:mb-10 md:mb-6 text-base lg:text-2xl mb-5 glass p-4 rounded-md"
         >
-          A platform where talent meets opportunities.
+          Welcome to the Telugu Esports Community (TEC), your ultimate
+          destination for everything related to esports in the Telugu-speaking
+          world. Whether you're a casual gamer or a competitive pro, TEC is here
+          to unite, nurture, and promote talent across various esports
+          disciplines.
         </p>
 
         <PrimaryButton />

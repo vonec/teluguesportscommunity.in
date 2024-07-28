@@ -8,8 +8,10 @@
 
     <!-- Text Start -->
     <p>
-      It long estabhed fact that reader will ditracted the readable content
-      looking using readable.
+      Telugu Esports Community (TEC) unites Telugu-speaking gamers, nurturing
+      talent with training and mentorship, and promoting esports excellence
+      through tournaments and events. Join TEC to connect, compete, and grow
+      together.
     </p>
     <!-- Text End -->
 

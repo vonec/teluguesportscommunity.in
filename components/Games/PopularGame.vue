@@ -1,6 +1,5 @@
 <template>
   <div class="container mb-120">
-    <TitleSection :title="title" :text="text" />
     <div
       class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 gap-6"
     >
@@ -33,14 +32,9 @@
 <script>
 import gameHome from "@/data/games.json";
 export default {
-  components: {
-    TitleSection: () => import("@/components/Title/TitleSection"),
-  },
   data() {
     return {
       gameHome,
-      title: "Popular Game",
-      text: "When unknown printer took type and scrambled it to make type specimen book centuries,",
     };
   },
 };

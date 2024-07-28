@@ -29,6 +29,11 @@
   }
 }
 @layer components {
+  .glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
   .signup-btn {
     @apply w-37 leading-12 h-15 flex items-center text-white font-bold uppercase text-base justify-center font-exo hover:opacity-80;
   }

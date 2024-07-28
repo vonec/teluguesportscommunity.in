@@ -28,7 +28,8 @@
         class="container flex justify-between relative items-center md:flex-row flex-col-reverse"
       >
         <p class="text-gray-500 text-sm uppercase font-medium mb-0">
-          © 2021 TEC Made with <i class="icofont-heart text-primary"></i> in
+          &copy; {{ currentYear }} TEC Made with
+          <i class="icofont-heart text-primary"></i> in
           <img
             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAGJSURBVHjaYvy/nwEO/kEwGP37w/DvHxj9gSEwGyAAhXJwAAAEQzG0xSqmtJUZjOTW+sEll5f2xz5eMDkyDnaeOFmVxQIlCkiIveYVQGANDED2U6BShn9/gSyQHpCK3zDyFxj9ZmSXBdoAEEAs/8RMGTm1GFjE/v//9x+o5//fO6+FztyR+/vvr5HCbVWRpyCz//359/8PI4voP6ntAAHE+PvvXyZGxv//gbb8h9i2bPu9n5++6msIn7vzOcFPCWgM0CggCVT2/uMngABiYgI7nwGsA4K+fv2pLM21a//tz19//ger/g+RAgXJP4AAYoKYCkKMYH3//+spCx6/+vEPG5ehigDYWmT0DyCAGBmKGToCOp5+fPrn358/f3///vvn97/ff4Dk399AERD59w8I/fsjwy+zvHE5QACxMPxhgAjB1SGU/vsD1/nn319gMDD8YgAIIBYgBvJFuEUgxkBJMAKqAII///+AqP9gDf8YAAKIkSGZAagHaA+IhKM/SCJ/YAiUEBgAAgwA+jxNFkS1oCwAAAAASUVORK5CYII="
           />
@@ -74,15 +75,16 @@ export default {
   },
   data() {
     return {
+      currentYear: new Date().getFullYear(),
       links: [
         {
           contentBefore: "",
-          pageLink: "/contact",
-          linkName: "Terms & Condition",
+          pageLink: "/terms-and-conditions",
+          linkName: "Terms & Conditions",
         },
         {
           contentBefore: "||",
-          pageLink: "/contact",
+          pageLink: "/privacy-policy",
           linkName: "Privacy Policy",
         },
       ],
