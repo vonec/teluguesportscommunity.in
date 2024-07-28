@@ -65,7 +65,7 @@ module.exports = {
         9999: "9999",
       },
       fontFamily: {
-        metal: ["'Metal Mania', cursive"],
+        blackOps: ["'Black Ops One', system-ui"],
         exo: ["'Exo', sans-serif"],
       },
       fontSize: {

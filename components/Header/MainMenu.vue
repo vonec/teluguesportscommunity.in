@@ -15,7 +15,7 @@
         >
           <NuxtLink
             :to="menuItem.link"
-            class="text-white uppercase font-bold font-exo relative"
+            class="text-white uppercase font-bold font-exo py-4"
           >
             {{ menuItem.title }}
           </NuxtLink>

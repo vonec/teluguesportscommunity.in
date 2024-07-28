@@ -19,8 +19,6 @@
 
     <ContactForm />
 
-    <GoogleMaps />
-
     <ContactBanner :paddingTop="paddingTop" />
 
     <Footer />

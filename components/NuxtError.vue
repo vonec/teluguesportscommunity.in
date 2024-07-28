@@ -17,7 +17,7 @@
           <n-link
             to="/"
             class="group primary-btn opacity-100 transition-all"
-            style="background-image: url(/images/others/btn-bg.webp)"
+            style="background-image: url(/images/others/btn-bg.png)"
           >
             <img
               src="/images/icon/arrrow-left-icon.webp"
