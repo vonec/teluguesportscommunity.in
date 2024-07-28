@@ -3,36 +3,66 @@
     "gameImage": "/images/others/popular-game-thumb1.webp",
     "btnName": "Game Details",
     "title": "BGMI - Battle Ground Mobile India",
-    "slug": "1"
+    "slug": "bgmi",
+    "images": [
+      "/images/others/game-details-thumb.webp",
+      "/images/others/game-details-thumb.webp",
+      "/images/others/game-details-thumb.webp"
+    ]
   },
   {
     "gameImage": "/images/others/popular-game-thumb2.webp",
     "btnName": "Game Details",
     "title": "Valorant - First Person Shooter",
-    "slug": "2"
+    "slug": "valorant",
+    "images": [
+      "/images/others/game-details-thumb.webp",
+      "/images/others/game-details-thumb.webp",
+      "/images/others/game-details-thumb.webp"
+    ]
   },
   {
     "gameImage": "/images/others/popular-game-thumb3.webp",
     "btnName": "Game Details",
     "title": "Indus",
-    "slug": "3"
+    "slug": "indus",
+    "images": [
+      "/images/others/game-details-thumb.webp",
+      "/images/others/game-details-thumb.webp",
+      "/images/others/game-details-thumb.webp"
+    ]
   },
   {
     "gameImage": "/images/others/popular-game-thumb4.webp",
     "btnName": "Game Details",
     "title": "Call of Duty",
-    "slug": "4"
+    "slug": "call-of-duty",
+    "images": [
+      "/images/others/game-details-thumb.webp",
+      "/images/others/game-details-thumb.webp",
+      "/images/others/game-details-thumb.webp"
+    ]
   },
   {
     "gameImage": "/images/others/popular-game-thumb5.webp",
     "btnName": "Game Details",
-    "title": "Alien Space Seven Star",
-    "slug": "5"
+    "title": "CLash of Clansr",
+    "slug": "clash-of-clans",
+    "images": [
+      "/images/others/game-details-thumb.webp",
+      "/images/others/game-details-thumb.webp",
+      "/images/others/game-details-thumb.webp"
+    ]
   },
   {
     "gameImage": "/images/others/popular-game-thumb2.webp",
     "btnName": "Game Details",
-    "title": "Alien Space SNIPER SHOOTER",
-    "slug": "6"
+    "title": "Counter-Strike: Global Offensive",
+    "slug": "cs-go",
+    "images": [
+      "/images/others/game-details-thumb.webp",
+      "/images/others/game-details-thumb.webp",
+      "/images/others/game-details-thumb.webp"
+    ]
   }
 ]
