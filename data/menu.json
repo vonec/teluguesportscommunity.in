@@ -1,0 +1,41 @@
+[
+  {
+    "title": "Home",
+    "link": "/",
+    "submenu": []
+  },
+  {
+    "title": "Community",
+    "link": "/",
+    "submenu": [
+      { "title": "About TEC", "link": "/match" },
+      { "title": "Connect", "link": "/match/1" },
+      { "title": "Games", "link": "/match/1" },
+      { "title": "News", "link": "/match/1" }
+    ]
+  },
+  {
+    "title": "Events",
+    "link": "/",
+    "submenu": [
+      { "title": "Upcoming", "link": "/match" },
+      { "title": "Event Calendar", "link": "/match/1" },
+      { "title": "Past Events", "link": "/match/1" },
+      { "title": "Live Streams", "link": "/match/1" }
+    ]
+  },
+  {
+    "title": "Resources",
+    "link": "/",
+    "submenu": [
+      { "title": "Training", "link": "/match" },
+      { "title": "Tips and Tricks", "link": "/match/1" },
+      { "title": "Resources", "link": "/match/1" }
+    ]
+  },
+  {
+    "title": "Contact",
+    "link": "/contact",
+    "submenu": []
+  }
+]
