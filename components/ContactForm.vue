@@ -20,6 +20,13 @@
       </div>
       <div class="single-fild">
         <input
+          type="text"
+          class="px-6 h-14 mb-6 text-white border-secondary-80 bg-secondary-100 hover:border-primary transition-all border-2 border-solid block rounded-md w-full focus:outline-none"
+          placeholder="Organization"
+        />
+      </div>
+      <div class="single-fild">
+        <input
           type="email"
           class="px-6 h-14 mb-6 text-white border-secondary-80 bg-secondary-100 hover:border-primary transition-all border-2 border-solid block rounded-md w-full focus:outline-none"
           placeholder="E-mail"
@@ -30,13 +37,6 @@
           type="text"
           class="px-6 h-14 mb-6 text-white border-secondary-80 bg-secondary-100 hover:border-primary transition-all border-2 border-solid block rounded-md w-full focus:outline-none"
           placeholder="Phone"
-        />
-      </div>
-      <div class="single-fild">
-        <input
-          type="text"
-          class="px-6 h-14 mb-6 text-white border-secondary-80 bg-secondary-100 hover:border-primary transition-all border-2 border-solid block rounded-md w-full focus:outline-none"
-          placeholder="Address"
         />
       </div>
       <div class="single-fild col-span-2">
@@ -79,8 +79,8 @@ export default {
   data() {
     return {
       title: "Get in Touch",
-      text: "When unknown printer took type and scrambled it to make type specimen book centuries,",
-      btnName: "Submit Now",
+      text: "",
+      btnName: "Submit",
     };
   },
 };

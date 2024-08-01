@@ -15,11 +15,7 @@
       :BreadcrumbSubTitle="BreadcrumbSubTitle"
     />
 
-    <ContactDetails />
-
     <ContactForm />
-
-    <ContactBanner :paddingTop="paddingTop" />
 
     <Footer />
   </div>

@@ -1,6 +1,6 @@
 [
   {
-    "gameImage": "/images/others/popular-game-thumb1.webp",
+    "gameImage": "/images/games/bgmi.jpg",
     "btnName": "Game Details",
     "title": "BGMI - Battle Ground Mobile India",
     "slug": "bgmi",
@@ -11,29 +11,7 @@
     ]
   },
   {
-    "gameImage": "/images/others/popular-game-thumb2.webp",
-    "btnName": "Game Details",
-    "title": "Valorant - First Person Shooter",
-    "slug": "valorant",
-    "images": [
-      "/images/others/game-details-thumb.webp",
-      "/images/others/game-details-thumb.webp",
-      "/images/others/game-details-thumb.webp"
-    ]
-  },
-  {
-    "gameImage": "/images/others/popular-game-thumb3.webp",
-    "btnName": "Game Details",
-    "title": "Indus",
-    "slug": "indus",
-    "images": [
-      "/images/others/game-details-thumb.webp",
-      "/images/others/game-details-thumb.webp",
-      "/images/others/game-details-thumb.webp"
-    ]
-  },
-  {
-    "gameImage": "/images/others/popular-game-thumb4.webp",
+    "gameImage": "/images/games/call-of-duty.jpg",
     "btnName": "Game Details",
     "title": "Call of Duty",
     "slug": "call-of-duty",
@@ -44,9 +22,9 @@
     ]
   },
   {
-    "gameImage": "/images/others/popular-game-thumb5.webp",
+    "gameImage": "/images/games/clash-of-clans.jpg",
     "btnName": "Game Details",
-    "title": "CLash of Clansr",
+    "title": "CLash of Clans",
     "slug": "clash-of-clans",
     "images": [
       "/images/others/game-details-thumb.webp",
@@ -55,10 +33,55 @@
     ]
   },
   {
-    "gameImage": "/images/others/popular-game-thumb2.webp",
+    "gameImage": "/images/games/cs-go.jpg",
     "btnName": "Game Details",
     "title": "Counter-Strike: Global Offensive",
     "slug": "cs-go",
+    "images": [
+      "/images/others/game-details-thumb.webp",
+      "/images/others/game-details-thumb.webp",
+      "/images/others/game-details-thumb.webp"
+    ]
+  },
+  {
+    "gameImage": "/images/games/pokemon-unite.jpg",
+    "btnName": "Game Details",
+    "title": "Pokemon UNITE",
+    "slug": "pokemon-unite",
+    "images": [
+      "/images/others/game-details-thumb.webp",
+      "/images/others/game-details-thumb.webp",
+      "/images/others/game-details-thumb.webp"
+    ]
+  },
+  {
+    "gameImage": "/images/games/pubg-new-state.jpg",
+    "btnName": "Game Details",
+    "title": "PUBG: New State",
+    "slug": "pubg-new-state",
+    "images": [
+      "/images/others/game-details-thumb.webp",
+      "/images/others/game-details-thumb.webp",
+      "/images/others/game-details-thumb.webp"
+    ]
+  },
+  {
+    "gameImage": "/images/games/road-to-valor-empires.jpg",
+    "btnName": "Game Details",
+    "title": "Road to Valor: Empires",
+    "slug": "road-to-valor-empires",
+    "images": [
+      "/images/others/game-details-thumb.webp",
+      "/images/others/game-details-thumb.webp",
+      "/images/others/game-details-thumb.webp"
+    ]
+  },
+
+  {
+    "gameImage": "/images/games/valorant.jpg",
+    "btnName": "Game Details",
+    "title": "Valorant - First Person Shooter",
+    "slug": "valorant",
     "images": [
       "/images/others/game-details-thumb.webp",
       "/images/others/game-details-thumb.webp",

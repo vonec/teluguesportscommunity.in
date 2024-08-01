@@ -3,7 +3,10 @@
   <div class="container flex items-center space-x-4 flex-col lg:flex-row">
     <div class="w-full lg:w-1/2 mb-10 lg:mb-0">
       <div class="sm:mr-12 mr-0 text-center relative">
-        <img src="/images/others/about-thumb.webp" alt="" />
+        <img
+          src="/images/others/about-thumb.png"
+          alt="Telugu eSports Community"
+        />
         <CoolLightBox :items="items" :index="index" @close="index = null">
         </CoolLightBox>
         <div v-for="(item, imageIndex) in items" :key="imageIndex">
@@ -21,24 +24,31 @@
         <h5
           class="text-primary text-xl uppercase font-bold pl-24 lg:mb-6 mb-4 relative before:absolute before:content-[''] before:left-0 before:top-1/2 before:-translate-y-1/2 before:transform before:h-1 before:bg-primary before:w-16"
         >
-          About Bonx Studio
+          About Telugu eSports Community
         </h5>
-        <h2
-          class="text-white font-exo font-bold uppercase xl:text-title lg:text-5xl md:text-4xl sm:text-3xl text-2xl xl:leading-70 lg:leading-12 leading-10 max-w-sm md:max-w-xl lg:max-w-2xl"
-        >
-          bonx is the best gaming studio for all gamer.
-        </h2>
       </div>
       <div class="about_desc mb-10">
         <p>
-          It is a long established fact that a reader will be distracted the
-          readable content of page when looking at it layout the point using
-          lorem Ipsum is that it has a more-or-less normal distribution.
+          At TEC, our mission is to build a thriving ecosystem that unites all
+          stakeholders from the Telugu-speaking esports community. Whether you
+          are a player, coach, manager, clan member, sponsor, graphic designer,
+          production team member, promoter, or organizer, TEC is your ultimate
+          destination for everything related to esports.
         </p>
+        <div class="xl:mb-2 sm:mb-2 mt-6 mb-2">
+          <h3
+            class="xl:text-2xl text-xl text-white uppercase font-bold leading-8"
+          >
+            Our Vision
+          </h3>
+        </div>
+
         <p>
-          It is a long established fact that a reader will be distracted the
-          readable content of page when looking at it layout the point using
-          lorem Ipsum is that it has a more-or-less normal distribution.
+          Our vision is to build the largest and most vibrant esports ecosystem
+          for the Telugu-speaking community. We strive to create an environment
+          where every stakeholder feels welcome and empowered to achieve their
+          goals. Through continuous support, development, and promotion, we aim
+          to elevate the profile of Telugu esports on the global stage.
         </p>
       </div>
       <div class="about_btn">
@@ -71,7 +81,7 @@ export default {
       btnName: "Play Now",
       items: [
         {
-          src: "https://www.youtube.com/watch?v=eS9Qm4AOOBY",
+          src: "https://www.youtube.com/watch?v=STko8mdMoNg",
         },
       ],
       index: null,

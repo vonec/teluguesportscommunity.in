@@ -20,8 +20,6 @@
 
     <CounterUp />
 
-    <PopularGame />
-
     <Testimonial />
 
     <BlogPost />

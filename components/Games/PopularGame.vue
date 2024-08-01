@@ -5,7 +5,7 @@
     >
       <div
         class="relative group before:content-[''] before:absolute before:w-full before:h-full before:opacity-0 before:bg-black before:top-0 before:left-0 before:right-0 before:bottom-0 overflow-hidden hover:before:opacity-70 transition-all hover:before:transition-all before:border-4 before:border-white before:rounded-4xl before:border-opacity-20"
-        v-for="(games, index) in gameHome.slice(0, 4)"
+        v-for="(games, index) in gameHome"
         :key="index"
       >
         <img

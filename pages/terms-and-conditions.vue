@@ -15,8 +15,6 @@
       :BreadcrumbSubTitle="BreadcrumbSubTitle"
     />
 
-    <GameDetails :games="gameHome" />
-
     <ContactBanner :paddingTop="paddingTop" />
 
     <Footer />
@@ -24,34 +22,30 @@
 </template>
 
 <script>
-import gameHome from "@/data/games.json";
 export default {
   components: {
-    GameDetails: () => import("@/components/Games/GameDetails"),
     HeaderSection: () => import("@/components/HeaderSection"),
     OffCanvasMobileMenu: () =>
       import("@/components/Header/OffCanvasMobileMenu"),
     Breadcrumb: () => import("@/components/Breadcrumb"),
-    CounterUp: () => import("@/components/CounterUp"),
+    ContactDetails: () => import("@/components/ContactDetails"),
+    ContactForm: () => import("@/components/ContactForm"),
+    GoogleMaps: () => import("@/components/GoogleMaps"),
     ContactBanner: () => import("@/components/ContactBanner"),
     Footer: () => import("@/components/Footer"),
   },
-  data() {
+  head() {
     return {
-      btnName: "JOIN NOW",
-      gameHome,
-      navOpen: false,
-      BreadcrumbTitle: "Game Details",
-      BreadcrumbSubTitle: "Games",
-      paddingTop: "pt-32",
-      slug: this.$route.params.slug,
+      title: "Terms and Conditions",
     };
   },
-  mounted() {
-    this.gameHome = gameHome.find(
-      (games) => games.slug == this.$route.params.slug
-    );
-    this.BreadcrumbTitle = this.gameHome.title;
+  data() {
+    return {
+      navOpen: false,
+      BreadcrumbTitle: "Terms and Conditions",
+      BreadcrumbSubTitle: "",
+      paddingTop: "pt-32",
+    };
   },
 };
 </script>

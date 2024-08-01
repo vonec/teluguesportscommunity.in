@@ -18,10 +18,10 @@
     "title": "Events",
     "link": "/",
     "submenu": [
-      { "title": "Upcoming", "link": "/events/upcoming" },
+      { "title": "Upcoming", "link": "/events/upcoming/" },
       { "title": "Past Events", "link": "/events/past/" },
       { "title": "Event Calendar", "link": "/events/" },
-      { "title": "Live Streams", "link": "/events/live" }
+      { "title": "Live Streams", "link": "/events/live/" }
     ]
   },
   {
@@ -29,13 +29,13 @@
     "link": "/",
     "submenu": [
       { "title": "Training", "link": "/training" },
-      { "title": "Tips and Tricks", "link": "/tips-and-tricks" },
-      { "title": "Resources", "link": "/resources" }
+      { "title": "Tips and Tricks", "link": "/tips-and-tricks/" },
+      { "title": "Resources", "link": "/resources/" }
     ]
   },
   {
     "title": "Contact",
-    "link": "/contact",
+    "link": "/contact/",
     "submenu": []
   }
 ]

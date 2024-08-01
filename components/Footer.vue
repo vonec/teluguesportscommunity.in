@@ -8,11 +8,15 @@
           <div class="sm:col-span-6 lg:col-span-4">
             <FooterInfoWidget />
           </div>
-          <div class="sm:col-span-6 lg:col-span-3 mt-10 sm:mt-0">
-            <FooterContactInfoWidget />
-          </div>
-          <div class="sm:col-span-6 lg:col-span-3 mt-10 lg:mt-0">
-            <FooterWinnerWidget />
+          <div class="sm:col-span-6 lg:col-span-6 mt-10 sm:mt-0">
+            <!-- Text Start -->
+            <p>
+              Telugu Esports Community (TEC) unites Telugu-speaking gamers,
+              nurturing talent with training and mentorship, and promoting
+              esports excellence through tournaments and events. Join TEC to
+              connect, compete, and grow together.
+            </p>
+            <!-- Text End -->
           </div>
           <div class="sm:col-span-6 lg:col-span-2 mt-10 lg:mt-0">
             <FooterMenuList />
@@ -48,7 +52,7 @@
           <li
             v-for="(link, index) in links"
             :key="index"
-            class="text-white content-last-child-before before:ml-3 before:mr-3 before:inline-block before:content-['||'] first:before:hidden"
+            class="text-white content-last-child-before before:ml-3 before:mr-3 before:inline-block before:content-['|'] first:before:hidden"
           >
             <n-link
               :to="`${link.pageLink}`"
