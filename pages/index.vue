@@ -14,13 +14,7 @@
 
     <GamingWorld />
 
-    <LiveStream />
-
-    <UpcomingMatchesHome />
-
     <CounterUp />
-
-    <Testimonial />
 
     <BlogPost />
 

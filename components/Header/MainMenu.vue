@@ -21,7 +21,7 @@
           </NuxtLink>
           <ul
             v-if="menuItem.submenu.length"
-            class="flex flex-col bg-white absolute w-56 px-4 py-2 border-l-2 rounded left-0 right-auto top-12 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all group-hover:top-9"
+            class="flex flex-col -ml-5 bg-white absolute w-56 px-4 py-2 border-l-2 rounded left-0 right-auto top-12 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all group-hover:top-9"
           >
             <li
               v-for="(submenuItem, subIndex) in menuItem.submenu"

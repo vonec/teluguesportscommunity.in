@@ -29,11 +29,15 @@
       </div>
       <div class="about_desc mb-10">
         <p>
-          At TEC, our mission is to build a thriving ecosystem that unites all
-          stakeholders from the Telugu-speaking esports community. Whether you
-          are a player, coach, manager, clan member, sponsor, graphic designer,
-          production team member, promoter, or organizer, TEC is your ultimate
-          destination for everything related to esports.
+          At TEC, our mission is to build a thriving and inclusive ecosystem
+          that unites all stakeholders from the Telugu-speaking esports
+          community. Whether you are a player, coach, manager, clan member,
+          sponsor, graphic designer, production team member, promoter, or
+          organizer, TEC is your ultimate destination for everything related to
+          esports. While we focus on strengthening the Telugu esports community,
+          we also believe in coexistence and collaboration with other
+          communities, bringing the power of unity and shared passion to
+          everyone involved in the world of esports.
         </p>
         <div class="xl:mb-2 sm:mb-2 mt-6 mb-2">
           <h3

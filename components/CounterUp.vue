@@ -38,27 +38,27 @@ export default {
       counter: [
         {
           startVal: 0,
-          endVal: 8697,
+          endVal: 5,
           className: "text-yellow",
-          text: "Twitch Streams",
+          text: "Events",
         },
         {
           startVal: 0,
-          endVal: 480,
+          endVal: 9,
           className: "text-bright",
           text: "Total Games",
         },
         {
           startVal: 0,
-          endVal: 5367,
+          endVal: 15,
           className: "text-punch",
-          text: "Youtube Streams",
+          text: "Youtube Content Creators",
         },
         {
           startVal: 0,
-          endVal: 249,
+          endVal: 110,
           className: "text-primary",
-          text: "Pro Team",
+          text: "Pro Teams",
         },
       ],
     };

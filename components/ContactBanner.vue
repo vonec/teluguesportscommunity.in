@@ -9,8 +9,9 @@
         <h2
           class="text-white md:text-4xl lg:text-5xl xl:text-title sm:text-3xl text-2xl text-center md:text-left mb-6 md:mb-0 uppercase font-bold leading-9 lg:leading-70"
         >
-          Connect with us <br />
-          for gaming update.
+          Join us for exciting<br />
+          gaming updates and <br />
+          epic events!
         </h2>
       </div>
       <div>
@@ -40,7 +41,7 @@ export default {
   data() {
     return {
       videoBannerBg: "/images/bg/gaming-update.webp",
-      btnName: "Contact Now",
+      btnName: "Join US",
     };
   },
 };
