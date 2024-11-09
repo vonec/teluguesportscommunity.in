@@ -7,33 +7,11 @@
       class="text-white font-bold uppercase xl:text-title lg:text-5xl md:text-4xl sm:text-3xl text-2xl xl:leading-70 lg:leading-12 leading-10"
     >
       {{ games.title }}
+      
     </h2>
-    <div class="content-details">
-      <div class="description mt-6">
-        <p class="leading-8">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500 when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap electro typesetting, remaining
-          essentially unchanged. It was popularised in the 1960s with the
-          release of Letraset sheets containing Lorem Ipsum passages, and more
-          recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
-        </p>
-        <p class="leading-8">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500 when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap electro typesetting, remaining
-          essentially unchanged. It was popularised in the 1960s with the
-          release of Letraset sheets containing Lorem Ipsum passages, and more
-          recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
-        </p>
-      </div>
 
+    <div class="content-details">
+      
       <div class="gameslide my-15">
         <swiper class="swiper" :options="swiperOption">
           <swiper-slide
@@ -78,76 +56,31 @@
           Description:
         </h3>
         <p class="leading-8">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500 when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap electro typesetting, remaining
-          essentially unchanged. It was popularised in the 1960s with the
-          release of Letraset sheets containing Lorem Ipsum passages, and more
-          recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
-        </p>
-        <p class="leading-8">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500 when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap electro typesetting, remaining
-          essentially unchanged. It was popularised in the 1960s with the
-          release of Letraset sheets containing Lorem Ipsum passages, and more
-          recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
+          {{ games.description }}        
         </p>
       </div>
       <div class="description mt-6">
         <h3 class="text-2xl text-white uppercase font-bold mb-5">Features:</h3>
         <p class="leading-8">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500 when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap electro typesetting, remaining
-          essentially unchanged. It was popularised in the 1960s with the
-          release of Letraset sheets containing Lorem Ipsum passages, and more
-          recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
+ {{ games.features }}
+
         </p>
         <p class="leading-8">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500 when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap electro typesetting, remaining
-          essentially unchanged. It was popularised in the 1960s with the
-          release of Letraset sheets containing Lorem Ipsum passages, and more
-          recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
-        </p>
+
+  </p>
       </div>
       <div class="description mt-6">
         <h3 class="text-2xl text-primary uppercase font-bold mb-5">
           Whats New!
         </h3>
         <p class="leading-8">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500 when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap electro typesetting, remaining
-          essentially unchanged. It was popularised in the 1960s with the
-          release of Letraset sheets containing Lorem Ipsum passages, and more
-          recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
+          {{ games.whatsnew }}
         </p>
       </div>
 
       <blockquote class="py-5 mb-5">
         <p class="font-bold text-yellow italic lg:text-3xl text-xl">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry has been the industry's standard dummy text ever since the
-          1500 printer took galley of type scrambled it to make a type specimen
-          book.
+   !
         </p>
       </blockquote>
 
@@ -181,30 +114,6 @@
             <p class="text-gray-400">$0.85 - $985.00</p>
           </div>
         </div>
-      </div>
-      <div class="description mt-6">
-        <p class="leading-8">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500 when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap electro typesetting, remaining
-          essentially unchanged. It was popularised in the 1960s with the
-          release of Letraset sheets containing Lorem Ipsum passages, and more
-          recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
-        </p>
-        <p class="leading-8">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500 when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap electro typesetting, remaining
-          essentially unchanged. It was popularised in the 1960s with the
-          release of Letraset sheets containing Lorem Ipsum passages, and more
-          recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
-        </p>
       </div>
     </div>
   </div>

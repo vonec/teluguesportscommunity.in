@@ -3,7 +3,10 @@
     "gameImage": "/images/games/bgmi.jpg",
     "btnName": "Game Details",
     "title": "BGMI - Battle Ground Mobile India",
+    "description": " BGMI is a highly immersive and engaging battle royale game that drops players onto a vast map, where they must scavenge for resources, craft essential items, and fight to be the last person or team standing. Developed by Krafton Games, a subsidiary of Bluehole, the creators of PUBG Mobile, BGMI is specifically designed for the Indian market, offering a unique and thrilling experience. ",
+    "features": "BGMI offers a thrilling battle royale experience with a large-scale map, where up to 99 players engage in intense battles, with the last person or team standing declared the winner. The game features a vast map with diverse environments, including cities, forests, and deserts, where players can explore and scavenge for resources. The game also includes various vehicles, such as cars, bikes, and boats, which can be used to navigate the map and gain an advantage.",
     "slug": "bgmi",
+    "whatsnew": "BGMI has seen significant updates and improvements, including improved graphics and smoother performance for a more immersive experience. New maps are regularly added, offering fresh environments and locations for players to explore. The game also features various events and tournaments, which provide exclusive rewards and prizes. New characters, outfits, and accessories are regularly added, allowing players to customize their character further. The BGMI Royale Pass is a seasonal pass that offers exclusive rewards, including cosmetics, emotes, and in-game currency. Furthermore, the game's server performance has been improved, reducing lag and ensuring a smoother gaming experience.",
     "images": [
       "/images/others/game-details-thumb.webp",
       "/images/others/game-details-thumb.webp",
@@ -14,6 +17,9 @@
     "gameImage": "/images/games/call-of-duty.jpg",
     "btnName": "Game Details",
     "title": "Call of Duty",
+    "description":" : A free-to-play first-person shooter game developed by TiMi Studio Group and published by Activision for Android and iOS.",
+    "features":"Multiplayer modes such as Team Deathmatch, Domination, and Kill-Confirmed on iconic maps like Shipment, Raid, and Standoff100-player Battle Royale and Zombies modesCustomizable and intuitive controls, voice and text chat with friends, and thrilling 3D graphics and soundUnlock and earn dozens of iconic operators, weapons, outfits, scorestreaks, and gear to customize loadouts",
+    "whatsnew":"Season 9: Orbital Raiders with new features like the Epic Type 63 - Deadly Botany and the Flamenaut ScorestreakSeason 10: 5th Anniversary with a new Battle Pass and rewardsDirect sequel to Call of Duty: Modern Warfare II, with console-quality HD gaming on mobile devices",
     "slug": "call-of-duty",
     "images": [
       "/images/others/game-details-thumb.webp",
@@ -26,6 +32,9 @@
     "btnName": "Game Details",
     "title": "CLash of Clans",
     "slug": "clash-of-clans",
+    "description":" Clash of Clans is a mobile strategy game where players build and manage their village, collect resources, and train troops to attack other players or defend against enemy attacks. ",
+    "features":" Build and upgrade your village, including resource-gathering buildings, defensive structures, and troop training facilitiesTrain and upgrade troops, including Barbarians, Archers, and DragonsJoin or create a clan with up to 50 players to participate in Clan Wars and share resourcesExplore and attack other players' villages to earn rewards and resourcesDefend your village against enemy attacks and protect your resources ",
+    "whatsnew":" Town Hall 16 is the latest update, introducing new features and challenges Regular updates with new content, events, and game modesSocial features, including clan chat and clan wars, allow for social interaction with other players ",
     "images": [
       "/images/others/game-details-thumb.webp",
       "/images/others/game-details-thumb.webp",
@@ -37,6 +46,9 @@
     "btnName": "Game Details",
     "title": "Counter-Strike: Global Offensive",
     "slug": "cs-go",
+    "description":"  A first-person shooter game developed by Valve Corporation and published by Electronic Arts (EA) for mobile devices. ",
+    "features":"Classic Counter-Strike gameplay with 5v5 multiplayer matches12 maps, including Dust II, Inferno, and Nuke10 playable characters, each with unique abilities and playstylesLeaderboards and matchmaking for competitive play.     ",
+    "whatsnew":" Regular updates with new maps, characters, and game modesLimited-time events and challenges with exclusive rewardsCross-play with PC and console versions of Counter-Strike: Global Offensive. ",
     "images": [
       "/images/others/game-details-thumb.webp",
       "/images/others/game-details-thumb.webp",
@@ -48,6 +60,9 @@
     "btnName": "Game Details",
     "title": "Pokemon UNITE",
     "slug": "pokemon-unite",
+    "description":"  A free-to-play multiplayer online battle arena game developed by TiMi Studio Group and published by The Pokémon Company for mobile devices. ",
+    "features":" 5v5 team battles with a variety of Pokémon, each with unique abilities and playstyles Explore the Aeos Island, a vast world with diverse environments and challengesMaster various Pokémon and their moves to create a powerful teamParticipate in ranked matches and tournaments for competitive play.",
+    "whatsnew":" Regular updates with new Pokémon, game modes, and eventsLimited-time challenges and rewards for participating in eventsCross-platform play with PC and console versions of Pokémon Unite.",
     "images": [
       "/images/others/game-details-thumb.webp",
       "/images/others/game-details-thumb.webp",
@@ -59,6 +74,9 @@
     "btnName": "Game Details",
     "title": "PUBG: New State",
     "slug": "pubg-new-state",
+    "description":"  A battle royale game developed by PUBG Corporation and published by Krafton for mobile devices. ",
+    "features":" 99 players drop onto a large map, competing to be the last one standingRealistic graphics and physics engine for immersive gameplay Various vehicles and equipment to scavenge and useLarge map with diverse environments and weather conditions. ",
+    "whatsnew":" New map, Tres Tornados, with a unique layout and featuresImproved graphics and performance for a smoother gaming experience Regular updates with new content, events, and game modes. ",
     "images": [
       "/images/others/game-details-thumb.webp",
       "/images/others/game-details-thumb.webp",
@@ -70,6 +88,9 @@
     "btnName": "Game Details",
     "title": "Road to Valor: Empires",
     "slug": "road-to-valor-empires",
+    "description":" A real-time strategy game developed by Cheetah Mobile for mobile devices. ",
+    "features":" Build and manage your own empire, from ancient times to modern era Explore and conquer territories, gather resources, and recruit troopsResearch and upgrade technologies to improve your army and economy Engage in epic battles with other players and AI opponents. ",
+    "whatsnew":" Regular updates with new civilizations, units, and game modesLimited-time events and challenges with exclusive rewards Large-scale battles and sieges with up to 100 players ",
     "images": [
       "/images/others/game-details-thumb.webp",
       "/images/others/game-details-thumb.webp",
@@ -82,6 +103,9 @@
     "btnName": "Game Details",
     "title": "Valorant - First Person Shooter",
     "slug": "valorant",
+    "description":" : A free-to-play, first-person shooter game developed by Riot Games for PC and console platforms. ",
+    "features":"Competitive 5v5 team-based gameplay with a focus on tactical strategy and skill-based gunplay 17 playable agents, each with unique abilities and playstyles 14 maps, including classic maps like Bind and Haven, and new maps like Ascent and Split Agent abilities and ultimate abilities that can turn the tide of battle Regular updates with new agents, maps, and game modes.",
+    "whatsnew":" New agents, such as Astra and Harbor, with unique abilities and playstyles New maps, such as Fracture and Pearl, with unique features and strategies Limited-time events and challenges with exclusive rewards, such as the Valorant Champions Tour Esports integration, with professional tournaments and leagues, and a large prize pool for the Valorant Champions Tour.",
     "images": [
       "/images/others/game-details-thumb.webp",
       "/images/others/game-details-thumb.webp",

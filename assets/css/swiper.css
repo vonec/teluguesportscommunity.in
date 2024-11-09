@@ -484,4 +484,89 @@ button.swiper-pagination-bullet {
   z-index: 0;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
+          @keyframes fadeIn {
+            from {
+              opacity: 0;
+              transform: translateY(20px);
+            }
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+          .fixed {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.85);
+          }
+          
+          .primary-btn {
+            background-color: #5b21b6;
+          }
+          .primary-btn:hover {
+            box-shadow: 0px 4px 12px rgba(91, 33, 182, 0.6);
+          }
+          .animate-fadeIn {
+            animation: fadeIn 0.5s ease-out forwards;
+          }
+          @keyframes fadeIn {
+            from {
+              opacity: 0;
+              transform: translateY(20px);
+            }
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+          
+          .fixed {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.85);
+          }
+          
+          .bg-primary {
+            background-color: #4c51bf;
+          }
+          
+          .text-primary {
+            color: #4c51bf;
+          }
+          
+          .animate-fadeIn {
+            animation: fadeIn 1s ease-out forwards;
+          }
+          
+          .shadow-lg {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+          }
+
+          .past-events {
+            background: transparent;
+          }
+          
+          .swiper-container {
+            padding: 1rem;
+          }
+          
+          .swiper-button-next,
+          .swiper-button-prev {
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+          }
+          
+          .swiper-button-next:hover,
+          .swiper-button-prev:hover {
+            color: #ffd700;
+          }
+          
+          .swiper-slide {
+            cursor: pointer;
+          }
+
+     
+          
 }

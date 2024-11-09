@@ -39,7 +39,7 @@ export default {
   data() {
     return {
       btnName: "JOIN NOW",
-      gameHome,
+      gameHome,    
       navOpen: false,
       BreadcrumbTitle: "Game Details",
       BreadcrumbSubTitle: "Games",

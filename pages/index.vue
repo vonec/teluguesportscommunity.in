@@ -24,7 +24,7 @@
   </div>
 </template>
 
-<script>
+<script> 
 export default {
   components: {
     HeaderSection: () => import("@/components/HeaderSection"),
