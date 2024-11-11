@@ -52,7 +52,11 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  modules: ["@nuxtjs/axios"],
+  axios: {
+    // Optional: Set the base URL for your API
+    baseURL: "https://data.teluguesportscommunity.in",
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},

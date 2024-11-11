@@ -1,27 +1,22 @@
 <template>
   <div class="container relative">
-    <p class="date text-primary font-bold mb-3">
-      03 January, 2021, 05:01:00 AM
-    </p>
     <h2
       class="text-white font-bold uppercase xl:text-title lg:text-5xl md:text-4xl sm:text-3xl text-2xl xl:leading-70 lg:leading-12 leading-10"
     >
       {{ games.title }}
-      
     </h2>
 
     <div class="content-details">
-      
       <div class="gameslide my-15">
         <swiper class="swiper" :options="swiperOption">
           <swiper-slide
-            v-for="(game, imageIndex) in gameslide"
+            v-for="(game, imageIndex) in games.images"
             :key="imageIndex"
           >
             <div class="relative">
               <img
                 class="sm:h-full h-64 w-full object-cover"
-                :src="`${game.gamingBg}`"
+                :src="`${game}`"
               />
             </div>
           </swiper-slide>
@@ -56,18 +51,15 @@
           Description:
         </h3>
         <p class="leading-8">
-          {{ games.description }}        
+          {{ games.description }}
         </p>
       </div>
       <div class="description mt-6">
         <h3 class="text-2xl text-white uppercase font-bold mb-5">Features:</h3>
         <p class="leading-8">
- {{ games.features }}
-
+          {{ games.features }}
         </p>
-        <p class="leading-8">
-
-  </p>
+        <p class="leading-8"></p>
       </div>
       <div class="description mt-6">
         <h3 class="text-2xl text-primary uppercase font-bold mb-5">
@@ -78,13 +70,12 @@
         </p>
       </div>
 
-      <blockquote class="py-5 mb-5">
-        <p class="font-bold text-yellow italic lg:text-3xl text-xl">
-   !
-        </p>
+      <blockquote class="py-5 mb-5" v-if="1 == 0">
+        <p class="font-bold text-yellow italic lg:text-3xl text-xl">!</p>
       </blockquote>
 
       <div
+        v-if="1 == 0"
         class="additional-information-area bg-secondary-100 px-9 py-9 rounded-2xl mb-9"
       >
         <h3 class="text-2xl text-white uppercase font-bold mb-6">

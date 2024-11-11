@@ -8,39 +8,43 @@
     <form
       id="contact-form"
       class="grid sm:gap-x-8 gap-x-4 grid-cols-2"
-      action="https://getform.io/f/6af30b8c-e767-4d30-b964-d7e38d35078b"
-      method="POST"
+      @submit.prevent="submitForm"
     >
-      <div class="single-fild">
+      <div>
         <input
+          v-model="formData.name"
           type="text"
           class="px-6 h-14 mb-6 text-white border-secondary-80 bg-secondary-100 hover:border-primary transition-all border-2 border-solid block rounded-md w-full focus:outline-none"
           placeholder="Name"
         />
       </div>
-      <div class="single-fild">
+      <div>
         <input
+          v-model="formData.organization"
           type="text"
           class="px-6 h-14 mb-6 text-white border-secondary-80 bg-secondary-100 hover:border-primary transition-all border-2 border-solid block rounded-md w-full focus:outline-none"
           placeholder="Organization"
         />
       </div>
-      <div class="single-fild">
+      <div>
         <input
+          v-model="formData.email"
           type="email"
           class="px-6 h-14 mb-6 text-white border-secondary-80 bg-secondary-100 hover:border-primary transition-all border-2 border-solid block rounded-md w-full focus:outline-none"
           placeholder="E-mail"
         />
       </div>
-      <div class="single-fild">
+      <div>
         <input
+          v-model="formData.phone"
           type="text"
           class="px-6 h-14 mb-6 text-white border-secondary-80 bg-secondary-100 hover:border-primary transition-all border-2 border-solid block rounded-md w-full focus:outline-none"
           placeholder="Phone"
         />
       </div>
-      <div class="single-fild col-span-2">
+      <div class="col-span-2">
         <textarea
+          v-model="formData.message"
           class="px-6 pt-4 h-40 md:h-60 lg:h-72 mb-6 text-white border-secondary-80 bg-secondary-100 hover:border-primary transition-all border-2 border-solid block rounded-md w-full focus:outline-none"
           type="text"
           placeholder="Write from here"
@@ -63,7 +67,12 @@
               class="ml-3 w-5 h-5 group-hover:ml-4 transition-all"
             />
           </button>
-          <p class="form-messege"></p>
+        </div>
+        <div class="col-span-2 text-center">
+          <p v-if="successMessage" class="success-message">
+            {{ successMessage }}
+          </p>
+          <p v-if="errorMessage" class="error-message">{{ errorMessage }}</p>
         </div>
       </div>
     </form>
@@ -81,7 +90,40 @@ export default {
       title: "Get in Touch",
       text: "",
       btnName: "Submit",
+      formData: {
+        name: "",
+        organization: "",
+        email: "",
+        phone: "",
+        message: "",
+      },
+      successMessage: "",
+      errorMessage: "",
     };
+  },
+  methods: {
+    async submitForm() {
+      try {
+        // Replace this URL with your actual backend API endpoint
+        const response = await this.$axios.post("/api/contact", this.formData);
+
+        if (response.status === 200) {
+          this.successMessage = "Thank you for contacting us!";
+          this.errorMessage = "";
+          // Clear the form after successful submission
+          this.formData = {
+            name: "",
+            organization: "",
+            email: "",
+            phone: "",
+            message: "",
+          };
+        }
+      } catch (error) {
+        this.successMessage = "";
+        this.errorMessage = "An error occurred. Please try again later.";
+      }
+    },
   },
 };
 </script>
