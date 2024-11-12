@@ -146,7 +146,7 @@ export default {
       try {
         // Replace this URL with your actual backend API endpoint
         const response = await this.$axios.post(
-          "/api/submitForm",
+          "https://teluguesportscommunity.in/api/submitForm",
           this.formData
         );
 
