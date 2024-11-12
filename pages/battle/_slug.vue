@@ -21,7 +21,7 @@
           class="team-mid-details-area flex flex-col md:flex-row align-center"
         >
           <div class="team-top-area mt-5 min-w-sm mx-auto text-center">
-            <img :src="battleData.battleimage" alt="" />
+            <img :src="battleData.battleimage" alt="Battle" />
             <h2 class="mt-5 font-blackOps text-[55px] text-shadow">
               {{ battleData.battlename }}
             </h2>

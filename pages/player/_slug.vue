@@ -23,7 +23,7 @@
           <div
             class="border-4 border-gray-400 rounded-3xl d-flex max-w-full md:max-w-sm overflow-hidden"
           >
-            <img class="w-full" :src="playerData.imgSrc" alt="" />
+            <img class="w-full" :src="playerData.imgSrc" :alt="playerData.title" />
           </div>
 
           <div
@@ -41,7 +41,7 @@
               <img
                 class="absolute w-full h-120"
                 src="/images/others/tam-text-shape2.webp"
-                alt=""
+                :alt="playerData.title"
               />
             </div>
           </div>

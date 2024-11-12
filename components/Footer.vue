@@ -44,7 +44,7 @@
             bottom="auto"
             right="auto"
           >
-            <img src="/images/icon/scroll-top.webp" alt="" />
+            <img src="/images/icon/scroll-top.webp" alt="Scroll to Top" />
           </back-to-top>
         </client-only>
 

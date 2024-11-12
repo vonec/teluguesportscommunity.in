@@ -10,7 +10,7 @@
         </div>
 
         <div class="error-404 mb-68">
-          <img src="/images/others/404.webp" alt="" />
+          <img src="/images/others/404.webp" alt="Error" />
         </div>
 
         <div class="flex justify-center">

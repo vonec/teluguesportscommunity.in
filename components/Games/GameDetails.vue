@@ -31,7 +31,7 @@
             <img
               class="w-4 h-6"
               src="/images/icon/navigation-arrow2.webp"
-              alt=""
+              alt="Previous "
             />
           </div>
           <div
@@ -40,7 +40,7 @@
             <img
               class="w-4 h-6"
               src="/images/icon/navigation-arrow1.webp"
-              alt=""
+              alt=" Next"
             />
           </div>
         </div>
