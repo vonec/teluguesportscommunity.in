@@ -1,21 +1,33 @@
-addEventListener("fetch", (event) => {
-  event.respondWith(handleRequest(event.request));
-});
+export async function onRequestPost(context) {
+  const { request } = context;
 
-async function handleRequest(request) {
-  if (request.method === "POST") {
+  try {
+    // Parse incoming form data
     const formData = await request.formData();
     const data = {};
-    formData.forEach((value, key) => (data[key] = value));
+    formData.forEach((value, key) => {
+      data[key] = value;
+    });
 
-    // Mock response (or forward to Google Apps Script as needed)
+    // Return the form data as JSON
     return new Response(JSON.stringify({ status: "success", data }), {
       headers: {
         "Content-Type": "application/json",
         "Access-Control-Allow-Origin": "*",
       },
+      status: 200,
     });
-  } else {
-    return new Response("Method Not Allowed", { status: 405 });
+  } catch (error) {
+    // Return an error response
+    return new Response(
+      JSON.stringify({ status: "error", message: error.message }),
+      {
+        headers: {
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "*",
+        },
+        status: 500,
+      }
+    );
   }
 }
