@@ -7,7 +7,7 @@
       <div class="w-full lg:w-1/2 mb-10 lg:mb-0 relative">
         <div class="sm:mr-12 mr-0 text-center relative">
           <img
-            src="/images/others/about-thumb.png"
+            src="/images/games/AI_img2.jpg"
             alt="Telugu eSports Community"
             class="rounded-lg shadow-lg transition-all duration-300 hover:scale-105"
             style="filter: brightness(0.85)"

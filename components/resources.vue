@@ -15,9 +15,9 @@
 
       <div class="flex flex-col lg:flex-row items-start lg:space-x-16">
         <!-- Video Thumbnail with Play Button -->
-        <div class="w-full lg:w-1/2 mb-8 lg:mb-0 relative group">
+        <div class="w-full lg:w-1/2 mb-8 lg:mb-0 relative">
           <img
-            src="/images/others/about-thumb.png"
+            src="/images/games/AI_img1.jpg"
             alt="Esports Resources"
             class="rounded-lg shadow-lg transition-transform transform hover:scale-105"
             style="filter: brightness(0.9)"
@@ -29,9 +29,9 @@
           ></CoolLightBox>
           <div
             @click="index = 0"
-            class="absolute inset-0 flex justify-center items-center bg-black bg-opacity-40 cursor-pointer opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            class="absolute bottom-0 right-0 md:right-32 lg:right-0 cursor-pointer h-24 w-24 bg-primary rounded-full flex justify-center items-center z-30 animate-pulse hover:scale-110 transition-all duration-200"
           >
-            <i class="icofont-ui-play text-white text-6xl"></i>
+            <i class="icofont-ui-play z-40 text-white text-4xl"></i>
           </div>
         </div>
 
@@ -109,5 +109,3 @@ export default {
   },
 };
 </script>
-
-<style scoped></style>

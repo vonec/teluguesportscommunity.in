@@ -15,6 +15,8 @@
       :BreadcrumbSubTitle="BreadcrumbSubTitle"
     />
 
+    <PrivacyPolicy />
+
     <ContactBanner :paddingTop="paddingTop" />
 
     <Footer />
@@ -31,6 +33,7 @@ export default {
     ContactDetails: () => import("@/components/ContactDetails"),
     ContactForm: () => import("@/components/ContactForm"),
     GoogleMaps: () => import("@/components/GoogleMaps"),
+    PrivacyPolicy: () => import("@/components/PrivacyPolicy"),
     ContactBanner: () => import("@/components/ContactBanner"),
     Footer: () => import("@/components/Footer"),
   },
