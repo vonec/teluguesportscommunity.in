@@ -46,7 +46,7 @@ export default {
     return {
       navOpen: false,
       BreadcrumbTitle: "Privacy Policy",
-      BreadcrumbSubTitle: "",
+      BreadcrumbSubTitle: "Privacy Policy",
       paddingTop: "pt-32",
     };
   },

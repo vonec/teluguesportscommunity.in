@@ -4,6 +4,7 @@
     <div
       class="container flex items-start space-y-8 flex-col lg:flex-row mt-20 pt-8"
     >
+    
       <div class="w-full lg:w-1/2 mb-10 lg:mb-0 relative">
         <div class="sm:mr-12 mr-0 text-center relative">
           <img
@@ -12,19 +13,6 @@
             class="rounded-lg shadow-lg transition-all duration-300 hover:scale-105"
             style="filter: brightness(0.85)"
           />
-          <CoolLightBox
-            :items="items"
-            :index="index"
-            @close="index = null"
-          ></CoolLightBox>
-          <div v-for="(item, imageIndex) in items" :key="imageIndex">
-            <div
-              @click="index = imageIndex"
-              class="absolute bottom-0 right-0 md:right-32 lg:right-0 cursor-pointer h-24 w-24 bg-primary rounded-full flex justify-center items-center z-30 animate-pulse hover:scale-110 transition-all duration-200"
-            >
-              <i class="icofont-ui-play z-40 text-white text-4xl"></i>
-            </div>
-          </div>
         </div>
       </div>
 
@@ -65,17 +53,10 @@ import CoolLightBox from "vue-cool-lightbox";
 import "vue-cool-lightbox/dist/vue-cool-lightbox.min.css";
 
 export default {
-  components: {
-    CoolLightBox,
-  },
+ 
   data() {
     return {
       btnName: "Play Now",
-      items: [
-        {
-          src: "https://www.youtube.com/watch?v=STko8mdMoNg",
-        },
-      ],
       index: null,
       sections: [
         {

@@ -39,7 +39,7 @@ export default {
         {
           pageLink: "/contact",
           className: "Contact",
-        },
+        },       
       ],
     };
   },

@@ -2,13 +2,6 @@
     <!-- Terms of Use Section Start -->
     <div class="container flex items-center space-x-4 flex-col lg:flex-row">
         <div class="w-full mb-10 lg:mb-0">
-            <div class="terms_title lg:mb-6 mb-4">
-                <h5
-                    class="text-primary text-xl uppercase font-bold pl-24 lg:mb-6 mb-4 relative before:absolute before:content-[''] before:left-0 before:top-1/2 before:-translate-y-1/2 before:transform before:h-1 before:bg-primary before:w-16"
-                >
-                    Terms of Use
-                </h5>
-            </div>
             <div class="terms_desc mb-10">
                 <p>
                     Please review these Terms of Use carefully, as they set forth the legally binding terms governing your access to and use of our services. By accessing our services, you agree to comply with these terms.

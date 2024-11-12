@@ -14,7 +14,7 @@
       </p>
 
       <div class="flex flex-col lg:flex-row items-start lg:space-x-16">
-        <!-- Video Thumbnail with Play Button -->
+        <!-- Video Thumbnail without Play Button -->
         <div class="w-full lg:w-1/2 mb-8 lg:mb-0 relative">
           <img
             src="/images/games/AI_img3.jpg"
@@ -22,17 +22,6 @@
             class="rounded-lg shadow-lg transition-transform transform hover:scale-105"
             style="filter: brightness(0.9)"
           />
-          <CoolLightBox
-            :items="items"
-            :index="index"
-            @close="index = null"
-          ></CoolLightBox>
-          <div
-            @click="index = 0"
-            class="absolute bottom-0 right-0 md:right-32 lg:right-0 cursor-pointer h-24 w-24 bg-primary rounded-full flex justify-center items-center z-30 animate-pulse hover:scale-110 transition-all duration-200"
-          >
-            <i class="icofont-ui-play z-40 text-white text-4xl"></i>
-          </div>
         </div>
 
         <!-- Training Resources Section -->
@@ -68,22 +57,9 @@
 </template>
 
 <script>
-import CoolLightBox from "vue-cool-lightbox";
-import "vue-cool-lightbox/dist/vue-cool-lightbox.min.css";
-
 export default {
-  components: {
-    CoolLightBox,
-  },
   data() {
     return {
-      btnName: "Play Now",
-      items: [
-        {
-          src: "https://www.youtube.com/watch?v=STko8mdMoNg",
-        },
-      ],
-      index: null,
       sections: [
         {
           title: "Strategic Mastery & Teamwork",

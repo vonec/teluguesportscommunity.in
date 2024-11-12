@@ -2,13 +2,6 @@
     <!-- Privacy Policy Section Start -->
     <div class="container flex items-center space-x-4 flex-col lg:flex-row">
       <div class="w-full mb-10 lg:mb-0">
-        <div class="privacy_policy_title lg:mb-6 mb-4">
-          <h5
-            class="text-primary text-xl uppercase font-bold pl-24 lg:mb-6 mb-4 relative before:absolute before:content-[''] before:left-0 before:top-1/2 before:-translate-y-1/2 before:transform before:h-1 before:bg-primary before:w-16"
-          >
-            Privacy Policy
-          </h5>
-        </div>
         <div class="privacy_policy_desc mb-10">
           <p>
             At TEC, we respect your privacy and are committed to protecting your personal information. This privacy policy outlines how we collect, use, share, and secure your data when you engage with our services. Our practices adhere to applicable data protection laws and industry standards to ensure a secure and trustworthy experience.

@@ -45,7 +45,7 @@ export default {
     return {
       navOpen: false,
       BreadcrumbTitle: "Terms and Conditions",
-      BreadcrumbSubTitle: "",
+      BreadcrumbSubTitle: "Terms and Conditions",
       paddingTop: "pt-32",
     };
   },
