@@ -151,7 +151,7 @@ export default {
         const formBody = new URLSearchParams(this.formData).toString();
 
         const response = await this.$axios.post(
-          "https://teluguesportscommunity.in/api/submitForm",
+          "/api/submitForm",
           formBody, // Use formBody instead of this.formData
           {
             headers: {
