@@ -1,29 +1,21 @@
-export async function onRequestPost(context) {
-  const { request } = context;
+addEventListener("fetch", (event) => {
+  event.respondWith(handleRequest(event.request));
+});
 
-  try {
-    // Parse the incoming request body
+async function handleRequest(request) {
+  if (request.method === "POST") {
     const formData = await request.formData();
     const data = {};
     formData.forEach((value, key) => (data[key] = value));
 
-    // Mock response to confirm the API route works
+    // Mock response (or forward to Google Apps Script as needed)
     return new Response(JSON.stringify({ status: "success", data }), {
       headers: {
         "Content-Type": "application/json",
         "Access-Control-Allow-Origin": "*",
       },
     });
-  } catch (error) {
-    return new Response(
-      JSON.stringify({ status: "error", message: error.message }),
-      {
-        headers: {
-          "Content-Type": "application/json",
-          "Access-Control-Allow-Origin": "*",
-        },
-        status: 500,
-      }
-    );
+  } else {
+    return new Response("Method Not Allowed", { status: 405 });
   }
 }
