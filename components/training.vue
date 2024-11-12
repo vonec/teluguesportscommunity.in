@@ -3,24 +3,31 @@
     <!-- Esports Training Section Start -->
     <div class="container mx-auto mt-20 pt-8 text-center">
       <!-- Heading and Hero Image -->
-      <h1 class="text-4xl lg:text-5xl font-extrabold text-primary mb-6 animate-fadeIn">Unlock Your Esports Potential</h1>
-      <p class="text-xl text-gray-300 mb-10 animate-fadeIn delay-300">
-        Step up your game with curated resources tailored to boost your skills, enhance strategy, and keep you at peak performance.
+      <h1
+        class="text-4xl lg:text-5xl font-extrabold text-primary mb-6 animate-fadeIn"
+      >
+        Unlock Your Esports Potential
+      </h1>
+      <p class="text-xl mb-10 animate-fadeIn delay-300">
+        Step up your game with curated resources tailored to boost your skills,
+        enhance strategy, and keep you at peak performance.
       </p>
 
-      <div class="flex flex-col lg:flex-row items-center lg:space-x-16">
+      <div class="flex flex-col lg:flex-row items-start lg:space-x-16">
         <!-- Video Thumbnail with Play Button -->
         <div class="w-full lg:w-1/2 mb-8 lg:mb-0 relative group">
           <img
             src="/images/others/about-thumb.png"
             alt="Esports Training"
             class="rounded-lg shadow-lg transition-transform transform hover:scale-105"
-            style="filter: brightness(0.9);"
+            style="filter: brightness(0.9)"
           />
-          <CoolLightBox :items="items" :index="index" @close="index = null"></CoolLightBox>
-          <div
-            @click="index = 0"
-          >
+          <CoolLightBox
+            :items="items"
+            :index="index"
+            @close="index = null"
+          ></CoolLightBox>
+          <div @click="index = 0">
             <i class="icofont-ui-play text-white text-6xl"></i>
           </div>
         </div>
@@ -38,6 +45,18 @@
             </div>
             <p class="leading-relaxed text-lg">{{ section.content }}</p>
           </div>
+          <n-link
+            to="/contact"
+            class="group primary-btn opacity-100 transition-all"
+            style="background-image: url(/images/others/btn-bg.png)"
+          >
+            Join US
+            <img
+              src="/images/icon/arrrow-icon.webp"
+              alt="Arrow Icon"
+              class="ml-3 w-5 h-5 group-hover:ml-4 transition-all"
+            />
+          </n-link>
         </div>
       </div>
     </div>
@@ -87,4 +106,3 @@ export default {
   },
 };
 </script>
-
