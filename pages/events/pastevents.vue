@@ -17,7 +17,7 @@
   
       <PopularGame />
 
-      <PastEvents />
+      <EventsPast />
 
       <ContactBanner :paddingTop="paddingTop" />
   
@@ -33,6 +33,7 @@
         import("@/components/Header/OffCanvasMobileMenu"),
       Breadcrumb: () => import("@/components/Breadcrumb"),
       ContactBanner: () => import("@/components/ContactBanner"),
+      EventsPast: () => import("@/components/EventsPast"),
       Footer: () => import("@/components/Footer"),
     },
     data() {

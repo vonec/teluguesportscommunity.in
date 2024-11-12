@@ -1,0 +1,60 @@
+{
+    "title": "Welcome to the Exciting World of eSports!",
+    "services": [
+      {
+        "imgSrc": "/images/others/upcoming-game-thumb1.webp",
+        "name": "BGMI Image",
+        "title": "BGMI Championship",
+        "date": "Nov 15, 2024",
+        "time": "6:00 PM",
+        "link": "https://escharts.com/upcoming-tournaments/pubg",
+        "text": "Watch top players battle it out in the BGMI Championship, featuring intense gameplay and thrilling action!"
+      },
+      {
+        "imgSrc": "/images/others/upcoming-game-thumb2.webp",
+        "name": "CODM Image",
+        "title": "CODM Warfare",
+        "date": "Nov 20, 2024",
+        "time": "7:30 PM",
+        "link": "https://callofdutyleague.com/en-us/events",
+        "text": "Dive into the CODM Warfare tournament and witness exceptional strategies and team play!"
+      },
+      {
+        "imgSrc": "/images/others/upcoming-game-thumb3.webp",
+        "name": "CoC Image",
+        "title": "Clash of Clans Battle",
+        "date": "Nov 22, 2024",
+        "time": "5:00 PM",
+        "link": "https://escharts.com/upcoming-tournaments/pubg",
+        "text": "Join the Clash of Clans Battle as clans fight to claim victory in this ultimate strategy game."
+      },
+      {
+        "imgSrc": "/images/others/upcoming-game-thumb7.webp",
+        "name": "Valorant Image",
+        "title": "Valorant Masters",
+        "date": "Nov 25, 2024",
+        "time": "8:00 PM",
+        "link": "https://escharts.com/upcoming-tournaments/pubg",
+        "text": "Catch the Valorant Masters where precision meets skill in an intense showdown!"
+      },
+      {
+        "imgSrc": "/images/others/upcoming-game-thumb5.webp",
+        "name": "PUBG Image",
+        "title": "PUBG Global Series",
+        "date": "Dec 1, 2024",
+        "time": "9:00 PM",
+        "link": "https://escharts.com/upcoming-tournaments/pubg",
+        "text": "Survival of the fittest! Witness teams competing in the PUBG Global Series."
+      },
+      {
+        "imgSrc": "/images/others/upcoming-game-thumb6.webp",
+        "name": "Pokemon Unite Image",
+        "title": "Pokémon Unite Championship",
+        "date": "Dec 5, 2024",
+        "time": "4:30 PM",
+        "link": "https://escharts.com/upcoming-tournaments/pubg",
+        "text": "Experience the Pokémon Unite Championship with thrilling team-based action and unique Pokémon strategies."
+      }
+    ]
+  }
+  

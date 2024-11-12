@@ -16,7 +16,7 @@
         :BreadcrumbSubTitle="BreadcrumbSubTitle"
       />
 
-      <eventsupcoming />
+      <EventsUpcoming />
 
       <ContactBanner :paddingTop="paddingTop" />
 
@@ -35,7 +35,7 @@
       Breadcrumb: () => import("@/components/Breadcrumb"),
       ContactBanner: () => import("@/components/ContactBanner"),
       Footer: () => import("@/components/Footer"),
-      UpcomingMatches: () => import("@/components/UpcomingMatches")
+      EventsUpcoming: () => import("@/components/EventsUpcoming")
  
 
     },
