@@ -22,7 +22,7 @@ export async function onRequestPost(context) {
 
     // Forward data to Google Apps Script
     const googleScriptUrl =
-      "https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec"; // Replace with your Apps Script URL
+      "https://script.google.com/macros/s/AKfycbwamlVVSSpSlrcizNDIE2_2YBgKvFq55nMvdwZ0tOpQzKEOxLV24T-mTeQnojkN-cxeiw/exec"; // Replace with your Apps Script URL
     const response = await fetch(googleScriptUrl, {
       method: "POST",
       headers: {
