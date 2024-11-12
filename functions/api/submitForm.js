@@ -1,46 +1,41 @@
-export async function onRequestPost(context) {
-  const { request } = context;
+addEventListener("fetch", (event) => {
+  event.respondWith(handleRequest(event.request));
+});
 
-  try {
-    // Parse the incoming request body
-    const formData = await request.formData();
-    const data = {};
-    formData.forEach((value, key) => (data[key] = value));
+async function handleRequest(request) {
+  if (request.method === "POST") {
+    try {
+      const formData = await request.formData();
+      const data = {};
+      formData.forEach((value, key) => (data[key] = value));
 
-    console.log("Data sent to Google Apps Script:", data);
+      // Log data received for debugging
+      console.log("Data received:", JSON.stringify(data));
 
-    // URL of the Google Apps Script web app
-    const googleScriptUrl =
-      "https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec";
-
-    // Forward the data to Google Apps Script using a POST request
-    const response = await fetch(googleScriptUrl, {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(data).toString(),
-    });
-
-    const responseData = await response.json();
-    console.log("Response from Google Apps Script:", responseData);
-
-    // Return the response back to the client
-    return new Response(JSON.stringify(responseData), {
-      headers: {
-        "Content-Type": "application/json",
-        "Access-Control-Allow-Origin": "*", // Handle CORS
-      },
-    });
-  } catch (error) {
-    console.log("Error:", error.message);
-    return new Response(
-      JSON.stringify({ status: "error", message: error.message }),
-      {
+      // Send back a mock response to confirm data receipt
+      return new Response(JSON.stringify({ status: "success", data }), {
         headers: {
           "Content-Type": "application/json",
-          "Access-Control-Allow-Origin": "*", // Handle CORS
+          "Access-Control-Allow-Origin": "*",
         },
-        status: 500,
-      }
-    );
+      });
+    } catch (error) {
+      // Log error for debugging
+      console.log("Error:", error.message);
+
+      // Send back error response
+      return new Response(
+        JSON.stringify({ status: "error", message: error.message }),
+        {
+          headers: {
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "*",
+          },
+          status: 500,
+        }
+      );
+    }
+  } else {
+    return new Response("Method Not Allowed", { status: 405 });
   }
 }
