@@ -29,7 +29,7 @@ export async function onRequestPost(context) {
 
     // Forward data to Google Apps Script
     const googleScriptUrl =
-      "https://script.google.com/macros/s/AKfycbwamlVVSSpSlrcizNDIE2_2YBgKvFq55nMvdwZ0tOpQzKEOxLV24T-mTeQnojkN-cxeiw/exec"; // Replace with your Apps Script URL
+      "https://script.google.com/macros/s/AKfycbwK6aUTVNjTo93pt89aRULriHCCT2r-oEGq4v7xKmHdhLQP-9zPGD5V8NVPvMDFSB7fbg/exec"; // Replace with your Apps Script URL
     const response = await fetch(googleScriptUrl, {
       method: "POST",
       headers: {
