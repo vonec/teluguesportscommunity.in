@@ -144,10 +144,17 @@ export default {
   methods: {
     async submitForm() {
       try {
-        // Replace this URL with your actual backend API endpoint
+        // Convert form data to URL-encoded format
+        const formBody = new URLSearchParams(this.formData).toString();
+
         const response = await this.$axios.post(
           "https://teluguesportscommunity.in/api/submitForm",
-          this.formData
+          formBody, // Use formBody instead of this.formData
+          {
+            headers: {
+              "Content-Type": "application/x-www-form-urlencoded",
+            },
+          }
         );
 
         if (response.status === 200) {
