@@ -16,6 +16,7 @@
           type="text"
           class="px-6 h-14 mb-6 text-white border-secondary-80 bg-secondary-100 hover:border-primary transition-all border-2 border-solid block rounded-md w-full focus:outline-none"
           placeholder="Name"
+          required
         />
       </div>
       <div>
@@ -32,6 +33,7 @@
           type="email"
           class="px-6 h-14 mb-6 text-white border-secondary-80 bg-secondary-100 hover:border-primary transition-all border-2 border-solid block rounded-md w-full focus:outline-none"
           placeholder="E-mail"
+          required
         />
       </div>
       <div>
@@ -39,8 +41,43 @@
           v-model="formData.phone"
           type="text"
           class="px-6 h-14 mb-6 text-white border-secondary-80 bg-secondary-100 hover:border-primary transition-all border-2 border-solid block rounded-md w-full focus:outline-none"
-          placeholder="Phone"
+          placeholder="Contact Number"
+          required
         />
+      </div>
+      <div>
+        <select
+          v-model="formData.purpose"
+          class="px-6 h-14 mb-6 text-white border-secondary-80 bg-secondary-100 hover:border-primary transition-all border-2 border-solid block rounded-md w-full focus:outline-none"
+          required
+        >
+          <option value="">Select Purpose</option>
+          <option value="Unite">Unite - Connect and collaborate</option>
+          <option value="Nurture">Nurture - Seek guidance and growth</option>
+          <option value="Promote">Promote - Showcase talent</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+      <div>
+        <select
+          v-model="formData.role"
+          class="px-6 h-14 mb-6 text-white border-secondary-80 bg-secondary-100 hover:border-primary transition-all border-2 border-solid block rounded-md w-full focus:outline-none"
+          required
+        >
+          <option value="">Select Role</option>
+          <option value="Player">Player</option>
+          <option value="Coach">Coach</option>
+          <option value="Manager">Manager</option>
+          <option value="Sponsor">Sponsor</option>
+          <option value="Graphic Designer">Graphic Designer</option>
+          <option value="Content Creator">
+            Content Creator ( eg Youtuber / Other)
+          </option>
+          <option value="Production Team">Production Team</option>
+          <option value="Promoter">Promoter</option>
+          <option value="Organizer">Organizer</option>
+          <option value="Other">Other</option>
+        </select>
       </div>
       <div class="col-span-2">
         <textarea
@@ -50,6 +87,7 @@
           placeholder="Write from here"
           spellcheck="false"
           data-gramm="false"
+          required
         ></textarea>
 
         <div class="form-btn-wrap flex justify-center w-full mt-16">
@@ -91,11 +129,13 @@ export default {
       text: "",
       btnName: "Submit",
       formData: {
-        name: "",
-        organization: "",
-        email: "",
-        phone: "",
-        message: "",
+        name: "ganesha",
+        organization: "ganesha",
+        role: "Player",
+        purpose: "Unite",
+        email: "ganesha@ganesha.com",
+        phone: "ganesha",
+        message: "ganesha",
       },
       successMessage: "",
       errorMessage: "",
@@ -105,24 +145,33 @@ export default {
     async submitForm() {
       try {
         // Replace this URL with your actual backend API endpoint
-        const response = await this.$axios.post("/api/contact", this.formData);
+        const response = await this.$axios.post(
+          "/api/submitForm",
+          this.formData
+        );
 
         if (response.status === 200) {
-          this.successMessage = "Thank you for contacting us!";
+          this.successMessage =
+            "Thank you for contacting us!, we will get back to you soon.";
           this.errorMessage = "";
           // Clear the form after successful submission
-          this.formData = {
-            name: "",
-            organization: "",
-            email: "",
-            phone: "",
-            message: "",
-          };
+          this.clearForm();
         }
       } catch (error) {
         this.successMessage = "";
         this.errorMessage = "An error occurred. Please try again later.";
       }
+    },
+    clearForm() {
+      this.formData = {
+        name: "",
+        organization: "",
+        role: "",
+        purpose: "",
+        email: "",
+        phone: "",
+        message: "",
+      };
     },
   },
 };
