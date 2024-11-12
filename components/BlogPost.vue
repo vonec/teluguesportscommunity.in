@@ -8,7 +8,7 @@
     <div
       class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 gap-6 sm:gap-12 px-0 sm:px-10"
     >
-      <div v-for="(blog, index) in blogData.slice(0, 7)" :key="index">
+      <div v-for="(blog, index) in blogData.slice(0, 12)" :key="index">
         <div class="flex sm:items-center flex-col sm:flex-row">
           <div
             class="lg:w-40 xl:w-52 2xl:w-52 md:w-44 sm:w-37 w-32 mb-7 sm:mb-0 flex-shrink-0"

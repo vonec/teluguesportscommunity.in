@@ -52,5 +52,56 @@
      
 
      
-    }
-]
+    },
+
+        {
+            "date": "09 November 2024",
+            "title": "BGMI’s New Map Update: Tactical Changes and New Features",
+            "link": "https://www.esports.net/news/pubg/",
+            "imgSrc": "/images/blog/blog-grid-2.webp"
+        },
+        {
+            "date": "09 November 2024",
+            "title": "CSGO's New Update Focuses on Game Balance and Weapon Tweaks",
+            "link": "https://www.esports.net/news/pubg/",
+            "imgSrc": "/images/blog/blog-grid-3.webp"
+        },
+        {
+            "date": "09 November 2024",
+            "title": "COD Mobile Introduces New Operators and Game Mechanics in Season 10",
+            "link": "https://www.esports.net/news/pubg/",
+            "imgSrc": "/images/blog/blog-grid-4.webp"
+        },
+        {
+            "date": "09 November 2024",
+            "title": "Clash of Clans Season Update Brings New Troops and Defenses",
+            "link": "https://www.esports.net/news/pubg/",
+            "imgSrc": "/images/blog/blog-grid-5.webp"
+        },
+        {
+            "date": "09 November 2024",
+            "title": "Valorant’s New Rank System Changes and Agent Buffs",
+            "link": "https://www.esports.net/news/pubg/",
+            "imgSrc": "/images/blog/blog-grid-6.webp"
+        },
+        {
+            "date": "09 November 2024",
+            "title": "Pokémon Unite Adds New Pokémon and Events to Keep Players Engaged",
+            "link": "https://www.esports.net/news/pubg/",
+            "imgSrc": "/images/blog/blog-grid-4.webp"
+        },
+        {
+            "date": "10 November 2024",
+            "title": "BGMI Implements Major Performance Enhancements for Smoother Gameplay",
+            "link": "https://www.esports.net/news/pubg/",
+            "imgSrc": "/images/blog/blog-grid-8.webp"
+        },
+        {
+            "date": "10 November 2024",
+            "title": "CSGO Expands Competitive Play with New Matchmaking Features",
+            "link": "https://www.esports.net/news/pubg/",
+            "imgSrc": "/images/blog/blog-grid-9.webp"
+        }
+    ]
+    
+

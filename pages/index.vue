@@ -16,7 +16,7 @@
 
     <CounterUp />
 
-    <BlogPost />
+    <BlogHome />
 
     <ContactBanner :paddingTop="paddingTop" />
 
@@ -37,7 +37,7 @@ export default {
     CounterUp: () => import("@/components/CounterUp"),
     PopularGame: () => import("@/components/Games/PopularGame"),
     Testimonial: () => import("@/components/Testimonial"),
-    BlogPost: () => import("@/components/BlogPost"),
+    BlogHome: () => import("@/components/BlogHome"),
     ContactBanner: () => import("@/components/ContactBanner"),
     Footer: () => import("@/components/Footer"),
   },
