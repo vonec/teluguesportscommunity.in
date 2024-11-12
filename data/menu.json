@@ -30,7 +30,7 @@
     "submenu": [
       { "title": "Training", "link": "/trainingpage" },
       { "title": "Tips and Tricks", "link": "/tips-and-tricks/" },
-      { "title": "Resources", "link": "/resourcespage/" }
+      { "title": "Resources", "link": "/resources/" }
     ]
   },
   {
