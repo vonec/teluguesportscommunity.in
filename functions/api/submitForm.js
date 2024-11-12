@@ -9,14 +9,20 @@ export async function onRequestPost(context) {
       data[key] = value;
     });
 
-    // Log the parsed data
-    console.log("Parsed Form Data:", JSON.stringify(data));
+    // Add timestamp (in ISO format)
+    data.timestamp = new Date().toISOString();
 
-    // Google Apps Script URL
+    // Get city and IP address from Cloudflare's data
+    const geoData = request.cf;
+    data.city = geoData.city || "N/A"; // Set to "N/A" if city is unavailable
+    data.ip = request.headers.get("CF-Connecting-IP") || "N/A"; // Get IP address
+
+    // Log the data being sent to Google Apps Script
+    console.log("Data sent to Google Apps Script:", JSON.stringify(data));
+
+    // Forward data to Google Apps Script
     const googleScriptUrl =
-      "https://script.google.com/macros/s/AKfycbwBM38U3oP7CmOis0Wk6NRGRE8N5n00BhNoutMQyV6XVYDW9N2IsqLViJdai_RFwkjt9Q/exec"; // Replace with your actual Apps Script URL
-
-    // Forward the data to Google Apps Script
+      "https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec"; // Replace with your Apps Script URL
     const response = await fetch(googleScriptUrl, {
       method: "POST",
       headers: {
@@ -25,20 +31,14 @@ export async function onRequestPost(context) {
       body: new URLSearchParams(data).toString(),
     });
 
-    // Log the response status and headers
-    console.log("Response Status:", response.status);
-    console.log("Response Headers:", JSON.stringify([...response.headers]));
-
-    // Parse the response from Google Apps Script
+    // Parse response from Google Apps Script
     const responseData = await response.json();
-
-    // Log the response data from Google Apps Script
     console.log(
-      "Response Data from Google Apps Script:",
+      "Response from Google Apps Script:",
       JSON.stringify(responseData)
     );
 
-    // Return the response back to the client
+    // Return response to client
     return new Response(JSON.stringify(responseData), {
       headers: {
         "Content-Type": "application/json",
@@ -47,10 +47,7 @@ export async function onRequestPost(context) {
       status: response.status,
     });
   } catch (error) {
-    // Log the error message
     console.log("Error:", error.message);
-
-    // Return an error response to the client
     return new Response(
       JSON.stringify({ status: "error", message: error.message }),
       {
