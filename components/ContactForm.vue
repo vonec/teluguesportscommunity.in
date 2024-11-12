@@ -93,20 +93,21 @@
         <div class="form-btn-wrap flex justify-center w-full mt-16">
           <button
             type="submit"
-            value="submit"
-            name="submit"
-            class="form-btn group primary-btn opacity-100 transition-all uppercase"
+            :disabled="loading"
+            class="form-btn group primary-btn opacity-100 transition-all uppercase flex items-center"
             style="background-image: url(/images/others/btn-bg.png)"
           >
-            {{ btnName }}
+            <span v-if="!loading">{{ btnName }}</span>
+            <span v-else>Submitting...</span>
             <img
+              v-if="!loading"
               src="/images/icon/arrrow-icon.webp"
               alt="Arrow Icon"
               class="ml-3 w-5 h-5 group-hover:ml-4 transition-all"
             />
           </button>
         </div>
-        <div class="col-span-2 text-center">
+        <div class="col-span-2 text-center mt-2">
           <p v-if="successMessage" class="success-message">
             {{ successMessage }}
           </p>
@@ -139,10 +140,12 @@ export default {
       },
       successMessage: "",
       errorMessage: "",
+      loading: false, // New loading state
     };
   },
   methods: {
     async submitForm() {
+      this.loading = true; // Set loading to true when starting request
       try {
         // Convert form data to URL-encoded format
         const formBody = new URLSearchParams(this.formData).toString();
@@ -167,6 +170,8 @@ export default {
       } catch (error) {
         this.successMessage = "";
         this.errorMessage = "An error occurred. Please try again later.";
+      } finally {
+        this.loading = false; // Reset loading state after request completes
       }
     },
     clearForm() {
