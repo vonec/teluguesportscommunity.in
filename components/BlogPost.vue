@@ -25,12 +25,13 @@
             <h2
               class="text-white xl:text-2xl lg:text-xl md:text-2xl sm:text-lg font-bold uppercase font-exo hover:text-primary transition-all mb-2 sm:mb-5 leading-9"
             >
-              <n-link :to="`/blog/${blog.slug}`">{{ blog.title }}</n-link>
+              <n-link :to="blog.link" target="_blank">{{ blog.title }}</n-link>
             </h2>
-            <n-link
-              :to="`/blog/${blog.slug}`"
+            <a
+              :href="blog.link"
+              target="_blank"
               class="uppercase font-exo relative pl-12 text-sm text-white transition-all hover:text-primary before:content-[''] before:absolute before:h-0.5 before:w-7.5 before:bg-primary before:left-0 before:top-1/2 before:transform before:-translate-y-1/2"
-              >Read More</n-link
+              >Read More</a
             >
           </div>
         </div>

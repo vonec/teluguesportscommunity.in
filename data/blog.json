@@ -1,83 +1,56 @@
 [
+      
     {
-
-    },
-    
-    {
-        "slug": "1",     
+       
         "date": "08 November 2024",
         "title": "BGMI’s New Royale Pass Reveals Exciting Rewards",
-        "imgSrc": "/images/blog/blog-grid-1.webp",
-        "imgLarge": "/images/blog/bgmi-update-large.webp",
-        "blogGrid": "/images/blog/bgmi-blog-grid.webp",
-        "alt": "BGMI Royale Pass",
-        "tag": "BGMI",
-        "slugTag": "BGMI"
+        "link": "https://www.esports.net/news/pubg/",
+        "imgSrc": "/images/blog/blog-grid-1.webp"
+       
+   
     },
     {
-        "slug": "2",
         "date": "08 November 2024",
+        "link": "https://www.esports.net/news/pubg/",
         "title": "CSGO’s Newest Operation Boosts Tactical Gameplay",
-        "imgSrc": "/images/blog/blog-grid-2.webp",
-        "imgLarge": "/images/blog/csgo-update-large.webp",
-        "blogGrid": "/images/blog/csgo-blog-grid.webp",
-        "alt": "CSGO Update",
-        "tag": "CSGO",
-        "slugTag": "CSGO"
+        "imgSrc": "/images/blog/blog-grid-2.webp"
+
+   
     },
     {
-        "slug": "3",
+   
         "date": "08 November 2024",
         "title": "COD Mobile Season 10 Brings Unique Operators & Maps",
-        "imgSrc": "/images/blog/blog-grid-3.webp",
-        "imgLarge": "/images/blog/codm-update-large.webp",
-        "blogGrid": "/images/blog/codm-blog-grid.webp",
-        "alt": "COD Mobile Update",
-        "tag": "CODM",
-        "slugTag": "CODM"
+        "link": "https://www.esports.net/news/pubg/",
+        "imgSrc": "/images/blog/blog-grid-3.webp"
+   
     },
     {
-        "slug": "4",
+       
         "date": "08 November 2024",
         "title": "Clash of Clans New Builder Base Update: What to Expect",
-        "imgSrc": "/images/blog/blog-grid-5.webp",
-        "imgLarge": "/images/blog/coc-update-large.webp",
-        "blogGrid": "/images/blog/coc-blog-grid.webp",
-        "alt": "COC Update",
-        "tag": "Clash of Clans",
-        "slugTag": "COC"
+        "link": "https://www.esports.net/news/pubg/",
+        "imgSrc": "/images/blog/blog-grid-5.webp"
+
+   
     },
     {
-        "slug": "5",
+    
         "date": "08 November 2024",
         "title": "Valorant’s Latest Agent and Map Changes",
-        "imgSrc": "/images/blog/blog-grid-6.webp",
-        "imgLarge": "/images/blog/valorant-update-large.webp",
-        "blogGrid": "/images/blog/valorant-blog-grid.webp",
-        "alt": "Valorant Update",
-        "tag": "Valorant",
-        "slugTag": "Valorant"
-    },
+        "link": "https://www.esports.net/news/pubg/",
+        "imgSrc": "/images/blog/blog-grid-6.webp"
+   
+    }, 
+       
     {
-        "slug": "6",
-        "date": "08 November 2024",
-        "title": "PUBG Unveils New Seasonal Content and Tactical Gear",
-        "imgSrc": "/images/blog/blog-grid-6.webp",
-        "imgLarge": "/images/blog/pubg-update-large.webp",
-        "blogGrid": "/images/blog/pubg-blog-grid.webp",
-        "alt": "PUBG Update",
-        "tag": "PUBG",
-        "slugTag": "PUBG"
-    },
-    {
-        "slug": "7",
+  
         "date": "08 November 2024",
         "title": "Pokémon Unite’s Latest Patch Balances Popular Pokémon",
-        "imgSrc": "/images/blog/blog-grid-1.webp",
-        "imgLarge": "/images/blog/pokemon-unite-update-large.webp",
-        "blogGrid": "/images/blog/pokemon-unite-blog-grid.webp",
-        "alt": "Pokémon Unite Update",
-        "tag": "Pokemon Unite",
-        "slugTag": "Pokemon Unite"
+        "link": "https://www.esports.net/news/pubg/",
+        "imgSrc": "/images/blog/blog-grid-1.webp"
+     
+
+     
     }
 ]

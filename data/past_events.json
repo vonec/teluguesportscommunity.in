@@ -2,51 +2,57 @@
     "title": "Highlights from the Exciting World of eSports!",
     "services": [
       {
-        "imgSrc": "/images/others/past-game-thumb1.webp",
+        "imgSrc": "/images/others/upcoming-game-thumb1.webp",
         "name": "BGMI Image",
         "title": "BGMI Championship Finals",
         "date": "Oct 10, 2024",
         "time": "6:00 PM",
+        "link": "https://callofdutyleague.com/en-us/events",
         "text": "Relive the intense moments of the BGMI Championship Finals, where players showcased top skills!"
       },
       {
-        "imgSrc": "/images/others/past-game-thumb2.webp",
+        "imgSrc": "/images/others/upcoming-game-thumb2.webp",
         "name": "CODM Image",
         "title": "CODM Warfare Playoffs",
         "date": "Oct 15, 2024",
         "time": "7:30 PM",
+        "link": "https://callofdutyleague.com/en-us/events",
         "text": "Watch the CODM Warfare playoffs and see the best strategies and teamwork in action!"
       },
       {
-        "imgSrc": "/images/others/past-game-thumb3.webp",
+        "imgSrc": "/images/others/upcoming-game-thumb3.webp",
         "name": "CoC Image",
         "title": "Clash of Clans Championship",
         "date": "Oct 20, 2024",
         "time": "5:00 PM",
+        "link": "https://callofdutyleague.com/en-us/events",
         "text": "The Clash of Clans Championship brought thrilling clan battles and strategic mastery!"
       },
       {
-        "imgSrc": "/images/others/past-game-thumb4.webp",
+        "imgSrc": "/images/others/upcoming-game-thumb4.webp",
         "name": "Valorant Image",
         "title": "Valorant Masters Clash",
         "date": "Oct 25, 2024",
         "time": "8:00 PM",
+        "link": "https://callofdutyleague.com/en-us/events",
         "text": "Catch the highlights from Valorant Masters, where precision and teamwork ruled!"
       },
       {
-        "imgSrc": "/images/others/past-game-thumb5.webp",
+        "imgSrc": "/images/others/upcoming-game-thumb5.webp",
         "name": "PUBG Image",
         "title": "PUBG Global Showdown",
         "date": "Nov 1, 2024",
         "time": "9:00 PM",
+        "link": "https://callofdutyleague.com/en-us/events",
         "text": "PUBG Global Showdown featured incredible survival moments in a battle for glory!"
       },
       {
-        "imgSrc": "/images/others/past-game-thumb6.webp",
+        "imgSrc": "/images/others/upcoming-game-thumb6.webp",
         "name": "Pokemon Unite Image",
         "title": "Pokémon Unite Showdown",
         "date": "Nov 5, 2024",
         "time": "4:30 PM",
+        "link": "https://callofdutyleague.com/en-us/events",
         "text": "Experience highlights from the Pokémon Unite Showdown with amazing Pokémon action!"
       }
     ]

@@ -25,12 +25,13 @@
         </div>
         <!-- Click Here Button in the same position in all cards -->
         <a
-          :href="service.link"
-          target="_blank"
-          class="mt-6 inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition-colors duration-300"
-        >
-          Click Here
-        </a>
+  :href="service.link"
+  target="_blank"
+  class="mt-6 inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition-colors duration-300"
+>
+  Click Here
+</a>
+
       </div>
     </div>
   </div>
