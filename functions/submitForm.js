@@ -1,5 +1,3 @@
-// functions/submitForm.js
-
 export async function onRequestPost(context) {
   const { request } = context;
 
@@ -9,9 +7,11 @@ export async function onRequestPost(context) {
     const data = {};
     formData.forEach((value, key) => (data[key] = value));
 
+    console.log("Data sent to Google Apps Script:", data);
+
     // URL of the Google Apps Script web app
     const googleScriptUrl =
-      "https://script.google.com/macros/s/AKfycbygnLcITw21w2DybReHeIHY_hhcDUqTsNiyzQuK72T_qPOyrIU56NBkyRv8_1yeTiGJaw/exec";
+      "https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec";
 
     // Forward the data to Google Apps Script using a POST request
     const response = await fetch(googleScriptUrl, {
@@ -21,6 +21,7 @@ export async function onRequestPost(context) {
     });
 
     const responseData = await response.json();
+    console.log("Response from Google Apps Script:", responseData);
 
     // Return the response back to the client
     return new Response(JSON.stringify(responseData), {
@@ -30,7 +31,7 @@ export async function onRequestPost(context) {
       },
     });
   } catch (error) {
-    // Handle errors and send back an error message
+    console.log("Error:", error.message);
     return new Response(
       JSON.stringify({ status: "error", message: error.message }),
       {
