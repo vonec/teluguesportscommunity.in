@@ -9,8 +9,15 @@ export async function onRequestPost(context) {
       data[key] = value;
     });
 
-    // Add timestamp (in ISO format)
-    data.timestamp = new Date().toISOString();
+    const now = new Date();
+    const formattedTimestamp = `${now.getFullYear()}-${String(
+      now.getMonth() + 1
+    ).padStart(2, "0")}-${String(now.getDate()).padStart(2, "0")} ${String(
+      now.getHours()
+    ).padStart(2, "0")}:${String(now.getMinutes()).padStart(2, "0")}:${String(
+      now.getSeconds()
+    ).padStart(2, "0")}`;
+    data.timestamp = formattedTimestamp;
 
     // Get city and IP address from Cloudflare's data
     const geoData = request.cf;
