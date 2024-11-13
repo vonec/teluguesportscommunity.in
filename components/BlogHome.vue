@@ -38,20 +38,6 @@
         </div>
       </div>
     </div>
-
-    <h2>News</h2>
-    <div v-for="(item, index) in newsData" :key="index">
-      <h3>{{ item.title }}</h3>
-      <p>{{ item.date }}</p>
-      <p>{{ item.content }}</p>
-    </div>
-
-    <h2>Events</h2>
-    <div v-for="(event, index) in eventsData" :key="index">
-      <h3>{{ event.name }}</h3>
-      <p>{{ event.date }}</p>
-      <p>{{ event.location }}</p>
-    </div>
   </div>
   <!-- Blog Post Section End -->
 </template>
@@ -67,41 +53,7 @@ export default {
       blogData,
       title: "Latest News",
       text: "",
-      newsData: [],
-      eventsData: [],
     };
-  },
-  async mounted() {
-    await this.loadData();
-  },
-  methods: {
-    async fetchSheetData(sheet, limit = null, sortByDate = false) {
-      try {
-        const params = {
-          sheet,
-          ...(limit && { limit }),
-          ...(sortByDate && { sortByDate: "true" }),
-        };
-
-        // Call the server-side proxy endpoint
-        const response = await axios.get("/api/google-sheet", { params });
-        return response.data;
-      } catch (error) {
-        console.error("Error fetching data:", error);
-        return [];
-      }
-    },
-    async loadData() {
-      try {
-        // Fetch "news" data, limited to 5 records, sorted by date
-        this.newsData = await this.fetchSheetData("news", 5, true);
-
-        // Fetch "events" data without limit or sorting
-        this.eventsData = await this.fetchSheetData("events");
-      } catch (error) {
-        console.error("Error loading data:", error);
-      }
-    },
   },
 };
 </script>

@@ -1,8 +1,5 @@
-addEventListener("fetch", (event) => {
-  event.respondWith(handleRequest(event.request));
-});
-
-async function handleRequest(request) {
+export async function onRequestGet(context) {
+  const { request } = context;
   const url = new URL(request.url);
 
   // Extract query parameters
@@ -22,7 +19,7 @@ async function handleRequest(request) {
 
   try {
     // Fetch data from Google Apps Script API
-    const response = await fetch(apiUrl.toString(), {
+    const response = await fetch(apiUrl, {
       method: "GET",
       headers: { "Content-Type": "application/json" },
     });
@@ -40,6 +37,7 @@ async function handleRequest(request) {
         "Content-Type": "application/json",
         "Access-Control-Allow-Origin": "*", // Allow all origins
         "Access-Control-Allow-Methods": "GET, HEAD, OPTIONS",
+        "Access-Control-Allow-Headers": "Content-Type",
       },
     });
   } catch (error) {
