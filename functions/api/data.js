@@ -18,12 +18,16 @@ export async function onRequestGet(context) {
   if (limit) apiUrl.searchParams.append("limit", limit);
   if (sortByDate) apiUrl.searchParams.append("sortByDate", sortByDate);
 
+  // Construct a custom cache key
+  const cacheKey = `data-sheet=${sheet || ""}-limit=${limit || ""}-sortByDate=${
+    sortByDate || ""
+  }`;
+
   // Use Cloudflare Cache API
   const cache = caches.default;
-  const cacheKey = new Request(apiUrl.toString(), request);
 
   try {
-    // Invalidate cache if `deletecache` parameter is present
+    // Invalidate cache if `deleteCache` parameter is present
     if (deleteCache) {
       await cache.delete(cacheKey);
       return new Response(JSON.stringify({ message: "Cache cleared" }), {
@@ -35,7 +39,7 @@ export async function onRequestGet(context) {
     // Check cache first
     let response = await cache.match(cacheKey);
     if (!response) {
-      // No cached response, fetch from Google Apps Script API
+      console.log("Cache miss - fetching from origin");
       response = await fetch(apiUrl, {
         method: "GET",
         headers: { "Content-Type": "application/json" },
@@ -48,6 +52,9 @@ export async function onRequestGet(context) {
       // Clone the response before putting it in cache
       const responseClone = response.clone();
       await cache.put(cacheKey, responseClone);
+      console.log("Response cached");
+    } else {
+      console.log("Cache hit");
     }
 
     // Return the response with CORS headers
@@ -55,7 +62,7 @@ export async function onRequestGet(context) {
       status: response.status,
       headers: {
         "Content-Type": "application/json",
-        "Access-Control-Allow-Origin": "*", // Allow all origins
+        "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Methods": "GET, HEAD, OPTIONS",
         "Access-Control-Allow-Headers": "Content-Type",
       },
