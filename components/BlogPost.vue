@@ -4,8 +4,11 @@
     <!-- Title Section Start -->
     <TitleSection :title="title" :text="text" />
     <!-- Title Section End -->
-
+    <div class="h-[500px] flex justify-center items-center" v-if="loading">
+      Loading...
+    </div>
     <div
+      v-else
       class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 gap-6 sm:gap-12 px-0 sm:px-10"
     >
       <div v-for="(blog, index) in blogData" :key="index">

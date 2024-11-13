@@ -4,7 +4,7 @@
     <div class="container relative">
       <!-- YouTube Channel Promotion Section -->
       <div
-        class="text-center bg-gradient-to-r from-red-600 via-red-700 to-red-800 text-white py-12 px-8 rounded-lg shadow-lg mb-10 relative overflow-hidden"
+        class="text-center bg-gradient-to-r to-orange-500 via-orange-600 from-red-500 text-white py-12 px-8 rounded-lg shadow-lg mb-10 relative overflow-hidden"
       >
         <!-- Floating Background Icons -->
         <div
@@ -29,10 +29,9 @@
         <a
           href="http://www.youtube.com/@TeluguEsportsCommunity"
           target="_blank"
-          class="bg-[#ff9900] hover:bg-yellow-600 text-black font-semibold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105 inline-flex items-center"
+          class="bg-red-600 hover:bg-yellow-600 text-white font-semibold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105 inline-flex items-center"
         >
           <svg
-            class="text-red-600"
             xmlns="http://www.w3.org/2000/svg"
             class="h-6 w-6 mr-2"
             fill="currentColor"

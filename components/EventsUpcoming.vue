@@ -9,6 +9,13 @@ span
       <TitleSection :title="title" />
     </div>
     <div
+      class="container h-[500px] flex justify-center items-center"
+      v-if="loading"
+    >
+      Loading...
+    </div>
+    <div
+      v-else
       class="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10"
     >
       <div
