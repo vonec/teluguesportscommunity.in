@@ -6,6 +6,7 @@ export async function onRequestGet(context) {
   const sheet = url.searchParams.get("s");
   const limit = url.searchParams.get("l");
   const sortByDate = url.searchParams.get("d");
+  const deleteCache = url.searchParams.get("reset");
 
   // Define the Google Apps Script URL
   const GOOGLE_SHEET_API_URL =
@@ -17,22 +18,41 @@ export async function onRequestGet(context) {
   if (limit) apiUrl.searchParams.append("limit", limit);
   if (sortByDate) apiUrl.searchParams.append("sortByDate", sortByDate);
 
-  try {
-    // Fetch data from Google Apps Script API
-    const response = await fetch(apiUrl, {
-      method: "GET",
-      headers: { "Content-Type": "application/json" },
-    });
+  // Use Cloudflare Cache API
+  const cache = caches.default;
+  const cacheKey = new Request(apiUrl.toString(), request);
 
-    if (!response.ok) {
-      throw new Error(`Google Apps Script API error: ${response.status}`);
+  try {
+    // Invalidate cache if `deletecache` parameter is present
+    if (deleteCache) {
+      await cache.delete(cacheKey);
+      return new Response(JSON.stringify({ message: "Cache cleared" }), {
+        status: 200,
+        headers: { "Content-Type": "application/json" },
+      });
     }
 
-    const data = await response.json();
+    // Check cache first
+    let response = await cache.match(cacheKey);
+    if (!response) {
+      // No cached response, fetch from Google Apps Script API
+      response = await fetch(apiUrl, {
+        method: "GET",
+        headers: { "Content-Type": "application/json" },
+      });
+
+      if (!response.ok) {
+        throw new Error(`Google Apps Script API error: ${response.status}`);
+      }
+
+      // Clone the response before putting it in cache
+      const responseClone = response.clone();
+      await cache.put(cacheKey, responseClone);
+    }
 
     // Return the response with CORS headers
-    return new Response(JSON.stringify(data), {
-      status: 200,
+    return new Response(response.body, {
+      status: response.status,
       headers: {
         "Content-Type": "application/json",
         "Access-Control-Allow-Origin": "*", // Allow all origins
@@ -41,7 +61,7 @@ export async function onRequestGet(context) {
       },
     });
   } catch (error) {
-    console.error("Error fetching data from Google Sheets:", error);
+    console.error("Error fetching data from Google:", error);
     return new Response(JSON.stringify({ error: "Failed to fetch data" }), {
       status: 500,
       headers: { "Content-Type": "application/json" },
