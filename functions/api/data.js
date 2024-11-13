@@ -6,8 +6,8 @@ export async function onRequestGet(context) {
   const sheet = url.searchParams.get("s");
   const limit = parseInt(url.searchParams.get("l")) || 10; // Default to 10 items per page
   const page = parseInt(url.searchParams.get("page")) || 1; // Default to first page
-  const sortByDate = url.searchParams.get("d");
-  const filterType = url.searchParams.get("t"); // upcoming / past
+  const sortByDate = url.searchParams.get("d") || true;
+  const filterType = url.searchParams.get("t") || false; // upcoming / past
   const deleteCache = url.searchParams.get("reset");
 
   // Calculate the range based on page and limit
@@ -25,10 +25,13 @@ export async function onRequestGet(context) {
   if (sortByDate) apiUrl.searchParams.append("sortByDate", sortByDate);
   if (filterType) apiUrl.searchParams.append("filterType", filterType);
 
+  console.log("API URL:", apiUrl.toString());
   // Construct a custom cache key based on query params, page, and limit
   const customKey = `${apiUrl.origin}${apiUrl.pathname}----sheet=${
     sheet || ""
-  }-limit=${limit}-page=${page}-sortByDate=${sortByDate || ""}`;
+  }-limit=${limit}-page=${page}-sortByDate=${sortByDate || ""}-filterType=${
+    filterType || ""
+  }`;
   console.log("Cache key:", customKey);
 
   // Use Cloudflare Cache API
