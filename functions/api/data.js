@@ -6,7 +6,7 @@ export async function onRequestGet(context) {
   const sheet = url.searchParams.get("s");
   const limit = parseInt(url.searchParams.get("l")) || 10; // Default to 10 items per page
   const page = parseInt(url.searchParams.get("page")) || 1; // Default to first page
-  const sortByDate = url.searchParams.get("d") || true;
+  const sortByDate = url.searchParams.get("d") || "desc";
   const filterType = url.searchParams.get("t") || false; // upcoming / past
   const deleteCache = url.searchParams.get("reset");
 
@@ -15,7 +15,7 @@ export async function onRequestGet(context) {
 
   // Define the Google Apps Script URL
   const GOOGLE_SHEET_API_URL =
-    "https://script.google.com/macros/s/AKfycbwoEPWcVtNvATAO6wUfDKo6dOrOPCQZVFLx3OoNCLc8L3Hfb32dH4QO_0pvvalf7eyM/exec";
+    "https://script.google.com/macros/s/AKfycby8aCFEUuYvTqWHrgMrJw2PDQk-yVIwmkt54UFKXuQhNNCvFkVNTRRUpK3qTsoKYqgs/exec";
 
   // Construct URL with query parameters
   const apiUrl = new URL(GOOGLE_SHEET_API_URL);
@@ -27,7 +27,7 @@ export async function onRequestGet(context) {
 
   console.log("API URL:", apiUrl.toString());
   // Construct a custom cache key based on query params, page, and limit
-  const customKey = `${apiUrl.origin}${apiUrl.pathname}----sheet=${
+  const customKey = `${apiUrl.origin}${apiUrl.pathname}---sheet=${
     sheet || ""
   }-limit=${limit}-page=${page}-sortByDate=${sortByDate || ""}-filterType=${
     filterType || ""
