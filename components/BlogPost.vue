@@ -14,14 +14,18 @@
             class="lg:w-40 xl:w-52 2xl:w-52 md:w-44 sm:w-37 w-32 mb-7 sm:mb-0 flex-shrink-0"
           >
             <a :href="blog.link" target="_blank">
-              <img :src="blog.imgSrc" :alt="blog.title" />
+              <img
+                :src="blog.imgSrc"
+                :alt="blog.title"
+                @error="handleImageError"
+              />
             </a>
           </div>
           <div class="xl:ml-9 lg:ml-6 md:ml-9 ml-3 flex flex-col flex-1">
-            <span class="text-sm text-white font-exo font-normal mb-2 sm:mb-5"
-              ><i class="icofont-calendar text-primary mr-2"></i
-              >{{ blog.date }}</span
-            >
+            <span class="text-sm text-white font-exo font-normal mb-2 sm:mb-5">
+              <i class="icofont-calendar text-primary mr-2"></i>
+              {{ formatDate(blog.date) }}
+            </span>
             <h2
               class="text-white xl:text-2xl lg:text-xl md:text-2xl sm:text-lg font-bold uppercase font-exo hover:text-primary transition-all mb-2 sm:mb-5 leading-9"
             >
@@ -129,6 +133,29 @@ export default {
       } finally {
         this.loading = false; // Stop loading
       }
+    },
+    formatDate(isoDate) {
+      const date = new Date(isoDate);
+      return date.toLocaleDateString("en-US", {
+        month: "short",
+        day: "numeric",
+        year: "numeric",
+      });
+    },
+    handleImageError(event) {
+      // Define the array of backup images directly inside the function
+      const backupImages = [
+        "/images/blog/blog-grid-1.webp",
+        "/images/blog/blog-grid-2.webp",
+        "/images/blog/blog-grid-3.webp",
+        "/images/blog/blog-grid-4.webp",
+        "/images/blog/blog-grid-5.webp",
+        "/images/blog/blog-grid-6.webp",
+      ];
+
+      // Select a random image from the backupImages array
+      const randomIndex = Math.floor(Math.random() * backupImages.length);
+      event.target.src = backupImages[randomIndex];
     },
   },
 };

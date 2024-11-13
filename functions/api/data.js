@@ -15,7 +15,7 @@ export async function onRequestGet(context) {
 
   // Define the Google Apps Script URL
   const GOOGLE_SHEET_API_URL =
-    "https://script.google.com/macros/s/AKfycby8aCFEUuYvTqWHrgMrJw2PDQk-yVIwmkt54UFKXuQhNNCvFkVNTRRUpK3qTsoKYqgs/exec";
+    "https://script.google.com/macros/s/AKfycbyvMwnej61qGtMV7ex5UxGaEt4WhEbvAkcjr1igJvr1xQsNEUaAWUJKWvj0Q-xz6MTW/exec";
 
   // Construct URL with query parameters
   const apiUrl = new URL(GOOGLE_SHEET_API_URL);
