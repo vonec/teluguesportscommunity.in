@@ -89,7 +89,7 @@ export default {
     try {
       // Fetch data from the API using the current page
       const response = await this.$axios.get(
-        `/api/data?s=news&page=${this.page}&limit=${this.limit}`
+        `/api/data?s=news&page=${this.page}&l=${this.limit}`
       );
       this.blogData = response.data.data;
       this.currentPage = response.data.meta.current_page;
@@ -106,7 +106,7 @@ export default {
       console.log("Fetching page", page);
       try {
         const { data } = await this.$axios.get(
-          `/api/data?s=news&page=${page}&limit=${this.limit}`
+          `/api/data?s=news&page=${page}&l=${this.limit}`
         );
         this.blogData = data.data;
         this.currentPage = data.meta.current_page;
