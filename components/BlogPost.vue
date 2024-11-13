@@ -48,9 +48,7 @@
         :disabled="currentPage === 1 || loading"
         class="px-4 py-2 bg-[#592F99] text-white rounded disabled:opacity-50"
       >
-        <span v-if="loading && currentPage === currentPage - 1"
-          >Loading...</span
-        >
+        <span v-if="loading">Loading...</span>
         <span v-else>Previous</span>
       </button>
 
@@ -61,9 +59,7 @@
         :disabled="currentPage >= totalPages || loading"
         class="px-4 py-2 bg-[#592F99] text-white rounded disabled:opacity-50"
       >
-        <span v-if="loading && currentPage === currentPage + 1"
-          >Loading...</span
-        >
+        <span v-if="loading">Loading...</span>
         <span v-else>Next</span>
       </button>
     </div>
