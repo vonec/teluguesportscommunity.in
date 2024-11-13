@@ -7,6 +7,7 @@ export async function onRequestGet(context) {
   const limit = parseInt(url.searchParams.get("l")) || 10; // Default to 10 items per page
   const page = parseInt(url.searchParams.get("page")) || 1; // Default to first page
   const sortByDate = url.searchParams.get("d");
+  const filterType = url.searchParams.get("t"); // upcoming / past
   const deleteCache = url.searchParams.get("reset");
 
   // Calculate the range based on page and limit
@@ -14,7 +15,7 @@ export async function onRequestGet(context) {
 
   // Define the Google Apps Script URL
   const GOOGLE_SHEET_API_URL =
-    "https://script.google.com/macros/s/AKfycbw64V6K3Tu-5oYgQtj3GOus9KgqJ0lkIWCrEB6QsB1OKGM5t3b2rtY_bqRedaZz2UlW/exec";
+    "https://script.google.com/macros/s/AKfycbwoEPWcVtNvATAO6wUfDKo6dOrOPCQZVFLx3OoNCLc8L3Hfb32dH4QO_0pvvalf7eyM/exec";
 
   // Construct URL with query parameters
   const apiUrl = new URL(GOOGLE_SHEET_API_URL);
@@ -22,9 +23,10 @@ export async function onRequestGet(context) {
   if (limit) apiUrl.searchParams.append("limit", limit);
   if (offset >= 0) apiUrl.searchParams.append("offset", offset);
   if (sortByDate) apiUrl.searchParams.append("sortByDate", sortByDate);
+  if (filterType) apiUrl.searchParams.append("filterType", filterType);
 
   // Construct a custom cache key based on query params, page, and limit
-  const customKey = `${apiUrl.origin}${apiUrl.pathname}-----sheet=${
+  const customKey = `${apiUrl.origin}${apiUrl.pathname}----sheet=${
     sheet || ""
   }-limit=${limit}-page=${page}-sortByDate=${sortByDate || ""}`;
   console.log("Cache key:", customKey);

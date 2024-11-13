@@ -45,7 +45,7 @@
       <button
         @click="fetchPage(currentPage - 1)"
         :disabled="currentPage === 1"
-        class="px-4 py-2 bg-gray-700 text-white rounded disabled:opacity-50"
+        class="px-4 py-2 bg-[#592F99] text-white rounded disabled:opacity-50"
       >
         Previous
       </button>
@@ -55,7 +55,7 @@
       <button
         @click="fetchPage(currentPage + 1)"
         :disabled="currentPage >= totalPages"
-        class="px-4 py-2 bg-gray-700 text-white rounded disabled:opacity-50"
+        class="px-4 py-2 bg-[#592F99] text-white rounded disabled:opacity-50"
       >
         Next
       </button>
@@ -91,7 +91,11 @@ export default {
       const response = await this.$axios.get(
         `/api/data?s=news&page=${this.page}&limit=${this.limit}`
       );
-      this.blogData = response.data.data; // Set blogData with the API response
+      this.blogData = response.data.data;
+      this.currentPage = response.data.meta.current_page;
+      this.limit = response.data.meta.per_page;
+      this.totalPages = response.data.meta.total_pages;
+      this.totalItems = response.data.meta.total;
     } catch (error) {
       console.error("Error fetching blog data:", error);
       this.blogData = null; // Reset blogData on error
