@@ -4,25 +4,31 @@ export async function onRequestGet(context) {
 
   // Extract query parameters
   const sheet = url.searchParams.get("s");
-  const limit = url.searchParams.get("l");
+  const limit = parseInt(url.searchParams.get("l")) || 10; // Default to 10 items per page
+  const page = parseInt(url.searchParams.get("page")) || 1; // Default to first page
   const sortByDate = url.searchParams.get("d");
   const deleteCache = url.searchParams.get("reset");
 
+  // Calculate the range based on page and limit
+  const offset = (page - 1) * limit;
+
   // Define the Google Apps Script URL
   const GOOGLE_SHEET_API_URL =
-    "https://script.google.com/macros/s/AKfycbyDPw2mF4sldz83pXI5948I7oJ3a0YQVsZt2c1MbWN1P_Ig1CtsTdlE3YoZcVGzt_I/exec";
+    "https://script.google.com/macros/s/AKfycbw64V6K3Tu-5oYgQtj3GOus9KgqJ0lkIWCrEB6QsB1OKGM5t3b2rtY_bqRedaZz2UlW/exec";
 
   // Construct URL with query parameters
   const apiUrl = new URL(GOOGLE_SHEET_API_URL);
   if (sheet) apiUrl.searchParams.append("sheet", sheet);
   if (limit) apiUrl.searchParams.append("limit", limit);
+  if (offset >= 0) apiUrl.searchParams.append("offset", offset);
   if (sortByDate) apiUrl.searchParams.append("sortByDate", sortByDate);
 
-  // Construct a simplified custom cache key
+  // Construct a custom cache key based on query params, page, and limit
   const customKey = `${apiUrl.origin}${apiUrl.pathname}-sheet=${
     sheet || ""
-  }-limit=${limit || ""}-sortByDate=${sortByDate || ""}`;
-  console.log(customKey);
+  }-limit=${limit}-page=${page}-sortByDate=${sortByDate || ""}`;
+  console.log("Cache key:", customKey);
+
   // Use Cloudflare Cache API
   const cache = caches.default;
 
