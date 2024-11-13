@@ -18,10 +18,10 @@ export async function onRequestGet(context) {
   if (limit) apiUrl.searchParams.append("limit", limit);
   if (sortByDate) apiUrl.searchParams.append("sortByDate", sortByDate);
 
-  // Construct a custom cache key
-  const customKey = `${apiUrl.toString()}-sheet=${sheet || ""}-limit=${
-    limit || ""
-  }-sortByDate=${sortByDate || ""}`;
+  // Construct a simplified custom cache key
+  const customKey = `${apiUrl.origin}${apiUrl.pathname}-sheet=${
+    sheet || ""
+  }-limit=${limit || ""}-sortByDate=${sortByDate || ""}`;
   const cacheKey = new Request(customKey);
 
   // Use Cloudflare Cache API
@@ -31,6 +31,7 @@ export async function onRequestGet(context) {
     // Invalidate cache if `deleteCache` parameter is present
     if (deleteCache) {
       await cache.delete(cacheKey);
+      console.log("Cache cleared for key:", customKey);
       return new Response(JSON.stringify({ message: "Cache cleared" }), {
         status: 200,
         headers: { "Content-Type": "application/json" },
@@ -39,8 +40,10 @@ export async function onRequestGet(context) {
 
     // Check cache first
     let response = await cache.match(cacheKey);
-    if (!response) {
-      console.log("Cache miss - fetching from origin");
+    if (response) {
+      console.log("Cache hit - serving from cache for key:", customKey);
+    } else {
+      console.log("Cache miss - fetching from origin for key:", customKey);
       response = await fetch(apiUrl, {
         method: "GET",
         headers: { "Content-Type": "application/json" },
@@ -52,10 +55,14 @@ export async function onRequestGet(context) {
 
       // Clone the response before putting it in cache
       const responseClone = response.clone();
-      await cache.put(cacheKey, responseClone);
-      console.log("Response cached");
-    } else {
-      console.log("Cache hit");
+      console.log("Attempting to store response in cache for key:", customKey);
+
+      // Optional: Modify headers if needed (e.g., to enable caching)
+      const cachedResponse = new Response(responseClone.body, responseClone);
+      cachedResponse.headers.set("Cache-Control", "public, max-age=86400"); // Cache for 1 day
+
+      await cache.put(cacheKey, cachedResponse);
+      console.log("Response cached successfully for key:", customKey);
     }
 
     // Return the response with CORS headers
