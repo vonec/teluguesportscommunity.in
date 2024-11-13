@@ -19,9 +19,10 @@ export async function onRequestGet(context) {
   if (sortByDate) apiUrl.searchParams.append("sortByDate", sortByDate);
 
   // Construct a custom cache key
-  const cacheKey = `data-sheet=${sheet || ""}-limit=${limit || ""}-sortByDate=${
-    sortByDate || ""
-  }`;
+  const customKey = `${apiUrl.toString()}-sheet=${sheet || ""}-limit=${
+    limit || ""
+  }-sortByDate=${sortByDate || ""}`;
+  const cacheKey = new Request(customKey);
 
   // Use Cloudflare Cache API
   const cache = caches.default;
