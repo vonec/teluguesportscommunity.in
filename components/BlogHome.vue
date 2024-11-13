@@ -58,7 +58,7 @@ export default {
     try {
       // Fetch data from the API using the current page
       const response = await this.$axios.get(
-        `/api/data?s=news&page=${this.page}&limit=${this.limit}`
+        `/api/data?s=news&page=${this.page}&l=${this.limit}`
       );
       this.blogData = response.data.data; // Set blogData with the API response
     } catch (error) {
