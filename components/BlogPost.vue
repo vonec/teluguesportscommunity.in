@@ -40,24 +40,31 @@
         </div>
       </div>
     </div>
+
     <!-- Pagination Controls -->
     <div class="mt-8 flex justify-between items-center">
       <button
         @click="fetchPage(currentPage - 1)"
-        :disabled="currentPage === 1"
+        :disabled="currentPage === 1 || loading"
         class="px-4 py-2 bg-[#592F99] text-white rounded disabled:opacity-50"
       >
-        Previous
+        <span v-if="loading && currentPage === currentPage - 1"
+          >Loading...</span
+        >
+        <span v-else>Previous</span>
       </button>
 
       <div>Page {{ currentPage }} of {{ totalPages }}</div>
 
       <button
         @click="fetchPage(currentPage + 1)"
-        :disabled="currentPage >= totalPages"
+        :disabled="currentPage >= totalPages || loading"
         class="px-4 py-2 bg-[#592F99] text-white rounded disabled:opacity-50"
       >
-        Next
+        <span v-if="loading && currentPage === currentPage + 1"
+          >Loading...</span
+        >
+        <span v-else>Next</span>
       </button>
     </div>
   </div>
@@ -79,15 +86,16 @@ export default {
       totalPages: 1,
       totalItems: 0,
       blogData: [],
+      loading: false, // Loading state
     };
   },
+
   async fetch() {
-    // Check the page query parameter in the URL and set to 1 if not present
     this.page = parseInt(this.$route.query.page) || 1;
     this.limit = parseInt(this.$route.query.limit) || 6;
 
     try {
-      // Fetch data from the API using the current page
+      this.loading = true; // Start loading
       const response = await this.$axios.get(
         `/api/data?s=news&page=${this.page}&l=${this.limit}`
       );
@@ -99,12 +107,19 @@ export default {
     } catch (error) {
       console.error("Error fetching blog data:", error);
       this.blogData = null; // Reset blogData on error
+    } finally {
+      this.loading = false; // Stop loading
     }
   },
+
   methods: {
     async fetchPage(page) {
       console.log("Fetching page", page);
+      this.loading = true; // Start loading
       try {
+        // Update the URL without reloading the page
+        this.$router.push({ query: { ...this.$route.query, page } });
+
         const { data } = await this.$axios.get(
           `/api/data?s=news&page=${page}&l=${this.limit}`
         );
@@ -115,6 +130,8 @@ export default {
         this.totalItems = data.meta.total;
       } catch (error) {
         console.error("Error fetching blog data:", error);
+      } finally {
+        this.loading = false; // Stop loading
       }
     },
   },
