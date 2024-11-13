@@ -3,9 +3,9 @@ export async function onRequestGet(context) {
   const url = new URL(request.url);
 
   // Extract query parameters
-  const sheet = url.searchParams.get("sheet");
-  const limit = url.searchParams.get("limit");
-  const sortByDate = url.searchParams.get("sortByDate");
+  const sheet = url.searchParams.get("s");
+  const limit = url.searchParams.get("l");
+  const sortByDate = url.searchParams.get("d");
 
   // Define the Google Apps Script URL
   const GOOGLE_SHEET_API_URL =
