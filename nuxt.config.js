@@ -50,7 +50,9 @@ export default {
       },
     ],
   ],
-
+  serverMiddleware: [
+    { path: "/api/google-sheet", handler: "~/server/googleSheetProxy.js" },
+  ],
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: ["@nuxtjs/axios"],
   axios: {
