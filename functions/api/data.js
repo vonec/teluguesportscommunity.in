@@ -24,7 +24,7 @@ export async function onRequestGet(context) {
   if (sortByDate) apiUrl.searchParams.append("sortByDate", sortByDate);
 
   // Construct a custom cache key based on query params, page, and limit
-  const customKey = `${apiUrl.origin}${apiUrl.pathname}-sheet=${
+  const customKey = `temp_${apiUrl.origin}${apiUrl.pathname}-sheet=${
     sheet || ""
   }-limit=${limit}-page=${page}-sortByDate=${sortByDate || ""}`;
   console.log("Cache key:", customKey);

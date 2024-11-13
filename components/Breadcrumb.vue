@@ -1,7 +1,7 @@
 <template>
   <!-- Breadcrumb Start -->
   <div
-    class="flex items-center relative bg-no-repeat bg-scroll bg-center bg-cover mb-15 h-365 md:h-460"
+    class="flex items-center relative bg-no-repeat bg-scroll bg-center bg-cover mb-15 h-365"
     style="background-image: url(/images/bg/breadcrumbs-bg.webp)"
   >
     <div class="container">

@@ -1,6 +1,6 @@
 <template>
   <!-- Blog Post Section Start -->
-  <div class="container pt-32">
+  <div class="container">
     <!-- Title Section Start -->
     <TitleSection :title="title" :text="text" />
     <!-- Title Section End -->
@@ -69,27 +69,37 @@ export default {
   components: {
     TitleSection: () => import("@/components/Title/TitleSection"),
   },
-  async asyncData({ $axios }) {
-    try {
-      const { data: blogData } = await $axios.get("/api/data?s=news");
-      return { blogData };
-    } catch (error) {
-      console.error("Error fetching blog data:", error);
-      return { blogData: [] };
-    }
-  },
+
   data() {
     return {
       title: "Latest News",
       text: "",
       currentPage: 1,
-      limit: 10,
+      limit: 12,
       totalPages: 1,
       totalItems: 0,
+      blogData: [],
     };
+  },
+  async fetch() {
+    // Check the page query parameter in the URL and set to 1 if not present
+    this.page = parseInt(this.$route.query.page) || 1;
+    this.limit = parseInt(this.$route.query.limit) || 6;
+
+    try {
+      // Fetch data from the API using the current page
+      const response = await this.$axios.get(
+        `/api/data?s=news&page=${this.page}&limit=${this.limit}`
+      );
+      this.blogData = response.data.data; // Set blogData with the API response
+    } catch (error) {
+      console.error("Error fetching blog data:", error);
+      this.blogData = null; // Reset blogData on error
+    }
   },
   methods: {
     async fetchPage(page) {
+      console.log("Fetching page", page);
       try {
         const { data } = await this.$axios.get(
           `/api/data?s=news&page=${page}&limit=${this.limit}`

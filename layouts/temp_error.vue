@@ -15,9 +15,7 @@
       :BreadcrumbSubTitle="BreadcrumbSubTitle"
     />
 
-    <BlogPost />
-
-    <ContactBanner :paddingTop="paddingTop" />
+    <NuxtError />
 
     <Footer />
   </div>
@@ -27,24 +25,18 @@
 export default {
   components: {
     HeaderSection: () => import("@/components/HeaderSection"),
-    BlogPost: () => import("@/components/BlogPost"),
     OffCanvasMobileMenu: () =>
       import("@/components/Header/OffCanvasMobileMenu"),
     Breadcrumb: () => import("@/components/Breadcrumb"),
+    NuxtError: () => import("@/components/NuxtError"),
     ContactBanner: () => import("@/components/ContactBanner"),
     Footer: () => import("@/components/Footer"),
   },
   data() {
     return {
       navOpen: false,
-      BreadcrumbTitle: "News",
-      BreadcrumbSubTitle: "News",
-      paddingTop: "pt-32",
-    };
-  },
-  head() {
-    return {
-      title: "News",
+      BreadcrumbTitle: "Error Page",
+      BreadcrumbSubTitle: "Pages",
     };
   },
 };

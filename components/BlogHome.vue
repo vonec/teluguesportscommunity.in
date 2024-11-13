@@ -8,7 +8,7 @@
     <div
       class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 gap-6 sm:gap-12 px-0 sm:px-10"
     >
-      <div v-for="(blog, index) in blogData.slice(0, 4)" :key="index">
+      <div v-for="(blog, index) in blogData" :key="index">
         <div class="flex sm:items-center flex-col sm:flex-row">
           <div
             class="lg:w-40 xl:w-52 2xl:w-52 md:w-44 sm:w-37 w-32 mb-7 sm:mb-0 flex-shrink-0"
@@ -38,21 +38,39 @@
         </div>
       </div>
     </div>
+    <div class="mt-4 flex justify-center">
+      <ButtonNewsButton />
+    </div>
   </div>
   <!-- Blog Post Section End -->
 </template>
 
 <script>
-import blogData from "@/data/blog.json";
 export default {
   components: {
     TitleSection: () => import("@/components/Title/TitleSection"),
   },
+  async fetch() {
+    // Check the page query parameter in the URL and set to 1 if not present
+    this.page = parseInt(this.$route.query.page) || 1;
+    this.limit = parseInt(this.$route.query.limit) || 6;
+
+    try {
+      // Fetch data from the API using the current page
+      const response = await this.$axios.get(
+        `/api/data?s=news&page=${this.page}&limit=${this.limit}`
+      );
+      this.blogData = response.data.data; // Set blogData with the API response
+    } catch (error) {
+      console.error("Error fetching blog data:", error);
+      this.blogData = null; // Reset blogData on error
+    }
+  },
   data() {
     return {
-      blogData,
       title: "Latest News",
       text: "",
+      blogData: [],
     };
   },
 };

@@ -1,13 +1,13 @@
 <template>
-    <div>
-        <error />
-    </div>
+  <div>
+    <error />
+  </div>
 </template>
 
 <script>
 export default {
   components: {
-      error: () => import('@/layouts/error')
+    //error: () => import('@/layouts/error')
   },
-}
+};
 </script>
