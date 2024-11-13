@@ -22,15 +22,14 @@ export async function onRequestGet(context) {
   const customKey = `${apiUrl.origin}${apiUrl.pathname}-sheet=${
     sheet || ""
   }-limit=${limit || ""}-sortByDate=${sortByDate || ""}`;
-  const cacheKey = new Request(customKey);
-
+  console.log(customKey);
   // Use Cloudflare Cache API
   const cache = caches.default;
 
   try {
     // Invalidate cache if `deleteCache` parameter is present
     if (deleteCache) {
-      await cache.delete(cacheKey);
+      await cache.delete(customKey);
       console.log("Cache cleared for key:", customKey);
       return new Response(JSON.stringify({ message: "Cache cleared" }), {
         status: 200,
@@ -39,7 +38,7 @@ export async function onRequestGet(context) {
     }
 
     // Check cache first
-    let response = await cache.match(cacheKey);
+    let response = await cache.match(customKey);
     if (response) {
       console.log("Cache hit - serving from cache for key:", customKey);
     } else {
@@ -61,7 +60,7 @@ export async function onRequestGet(context) {
       const cachedResponse = new Response(responseClone.body, responseClone);
       cachedResponse.headers.set("Cache-Control", "public, max-age=86400"); // Cache for 1 day
 
-      await cache.put(cacheKey, cachedResponse);
+      await cache.put(customKey, cachedResponse);
       console.log("Response cached successfully for key:", customKey);
     }
 
