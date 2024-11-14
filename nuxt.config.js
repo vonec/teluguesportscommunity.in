@@ -1,9 +1,7 @@
 export default {
   target: "static",
   dev: process.env.NODE_ENV !== "production",
-  build: {
-    publicPath: "/assets/", // Replace '_nuxt' with 'custom_path'
-  },
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: "Telugu eSports Community",
@@ -63,5 +61,7 @@ export default {
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {
+    publicPath: "/assets/", // Replace '_nuxt' with 'custom_path'
+  },
 };
