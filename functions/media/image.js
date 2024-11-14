@@ -13,7 +13,10 @@ export async function onRequestGet(context) {
   // Check if the response is already cached
   let cachedResponse = await cache.match(request);
   if (cachedResponse) {
-    return cachedResponse;
+    // Add a custom header indicating the source as Cloudflare Cache
+    const responseFromCache = new Response(cachedResponse.body, cachedResponse);
+    responseFromCache.headers.set("X-Cache-Source", "Cloudflare Cache");
+    return responseFromCache;
   }
 
   // Fetch the image from Google Drive
@@ -59,8 +62,9 @@ export async function onRequestGet(context) {
   proxiedResponse.headers.set(
     "Content-Type",
     response.headers.get("Content-Type") || "image/jpeg"
-  ); // Dynamically use content type from response
+  );
   proxiedResponse.headers.append("Cache-Control", `public, max-age=${86400}`); // Cache for 24 hours
+  proxiedResponse.headers.set("X-Cache-Source", "Google Drive"); // Indicate source as Google Drive
 
   // Cache the response for future requests
   context.waitUntil(cache.put(request, proxiedResponse.clone()));
