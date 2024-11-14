@@ -27,7 +27,7 @@ export async function onRequestGet(context) {
 
   console.log("API URL:", apiUrl.toString());
   // Construct a custom cache key based on query params, page, and limit
-  const customKey = `${apiUrl.origin}${apiUrl.pathname}----sheet=${
+  const customKey = `${apiUrl.origin}${apiUrl.pathname}--|--sheet=${
     sheet || ""
   }-limit=${limit}-page=${page}-sortByDate=${sortByDate || ""}-filterType=${
     filterType || ""
