@@ -1,6 +1,7 @@
 export async function onRequestGet(context) {
   const { request, params } = context;
-  const id = params.id; // Get the ID from the URL params
+  const url = new URL(request.url);
+  const id = url.searchParams.get("id"); // Get the ID from the query parameter
 
   if (!id) {
     return new Response("Image ID not specified", { status: 400 });
