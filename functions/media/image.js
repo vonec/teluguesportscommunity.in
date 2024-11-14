@@ -1,5 +1,5 @@
 export async function onRequestGet(context) {
-  const { request, params } = context;
+  const { request } = context;
   const url = new URL(request.url);
   const id = url.searchParams.get("id"); // Get the ID from the query parameter
 
@@ -25,29 +25,41 @@ export async function onRequestGet(context) {
     },
   });
 
-  // Check for confirmation token
+  // Check for the download confirmation token
   if (
     response.headers.get("set-cookie") &&
     response.headers.get("set-cookie").includes("download_warning")
   ) {
     const text = await response.text();
-    const confirmToken = text.split("confirm=")[1].split("&")[0];
-    const confirmUrl = `https://docs.google.com/uc?export=open&confirm=${confirmToken}&id=${id}`;
+    const confirmTokenMatch = text.match(/confirm=([a-zA-Z0-9_-]+)/);
+    const confirmToken = confirmTokenMatch ? confirmTokenMatch[1] : null;
 
-    response = await fetch(confirmUrl, {
-      redirect: "follow",
-      headers: {
-        "User-Agent": "Mozilla/5.0",
-        accept: "text/html",
-        Cookie: response.headers.get("set-cookie"),
-      },
-    });
+    if (confirmToken) {
+      const confirmUrl = `https://docs.google.com/uc?export=open&confirm=${confirmToken}&id=${id}`;
+
+      // Retry fetching with the confirmation token and set the necessary cookies
+      response = await fetch(confirmUrl, {
+        redirect: "follow",
+        headers: {
+          "User-Agent": "Mozilla/5.0",
+          accept: "text/html",
+          Cookie: response.headers.get("set-cookie"),
+        },
+      });
+    } else {
+      return new Response("Unable to retrieve confirmation token", {
+        status: 500,
+      });
+    }
   }
 
-  // Set CORS headers and cache the response
+  // Set appropriate CORS headers for client access
   const proxiedResponse = new Response(response.body, response);
   proxiedResponse.headers.set("Access-Control-Allow-Origin", "*");
-  proxiedResponse.headers.set("Content-Type", "image/jpeg"); // Adjust based on content type
+  proxiedResponse.headers.set(
+    "Content-Type",
+    response.headers.get("Content-Type") || "image/jpeg"
+  ); // Dynamically use content type from response
   proxiedResponse.headers.append("Cache-Control", `public, max-age=${86400}`); // Cache for 24 hours
 
   // Cache the response for future requests
