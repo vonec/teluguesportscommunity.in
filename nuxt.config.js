@@ -17,18 +17,11 @@ export default {
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
     script: [
       {
-        vmid: "g-tag",
-        src: "https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXX",
+        src: "https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX",
         async: true,
-        callback: () => {
-          window.dataLayer = window.dataLayer || [];
-          function gtag() {
-            window.dataLayer.push(arguments);
-          }
-          gtag("js", new Date());
-
-          gtag("config", "G-28MEZ7XQKX");
-        },
+      },
+      {
+        src: "js/ga.js",
       },
     ],
   },
