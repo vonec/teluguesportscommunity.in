@@ -9,9 +9,10 @@ export async function onRequestGet(context) {
 
   const cacheUrl = `https://docs.google.com/uc?export=open&id=${id}`;
   const cache = caches.default;
+  const cacheKey = new Request(request.url, request); // Explicitly create cache key
 
   // Check if the response is already cached
-  let cachedResponse = await cache.match(request);
+  let cachedResponse = await cache.match(cacheKey);
   if (cachedResponse) {
     // Add a custom header indicating the source as Cloudflare Cache
     const responseFromCache = new Response(cachedResponse.body, cachedResponse);
@@ -56,18 +57,27 @@ export async function onRequestGet(context) {
     }
   }
 
-  // Set appropriate CORS headers for client access
-  const proxiedResponse = new Response(response.body, response);
-  proxiedResponse.headers.set("Access-Control-Allow-Origin", "*");
-  proxiedResponse.headers.set(
+  // Selectively include only necessary headers
+  const headers = new Headers();
+  headers.set("Access-Control-Allow-Origin", "*");
+  headers.set(
     "Content-Type",
     response.headers.get("Content-Type") || "image/jpeg"
   );
-  proxiedResponse.headers.append("Cache-Control", `public, max-age=${86400}`); // Cache for 24 hours
-  proxiedResponse.headers.set("X-Cache-Source", "Google Drive"); // Indicate source as Google Drive
+  headers.set("Cache-Control", "public, max-age=86400"); // Cache for 24 hours
 
-  // Cache the response for future requests
-  context.waitUntil(cache.put(request, proxiedResponse.clone()));
+  // Create a response with only the required headers
+  const proxiedResponse = new Response(response.body, {
+    status: response.status,
+    statusText: response.statusText,
+    headers: headers,
+  });
+
+  // Cache the response for future requests using the defined cacheKey
+  context.waitUntil(cache.put(cacheKey, proxiedResponse.clone()));
+
+  // Set the X-Cache-Source header only for the direct response to the client
+  proxiedResponse.headers.set("X-Cache-Source", "Google Drive");
 
   return proxiedResponse;
 }
