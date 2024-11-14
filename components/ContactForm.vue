@@ -7,7 +7,7 @@
 
     <form
       id="contact-form"
-      class="grid sm:gap-x-8 gap-x-4 grid-cols-2"
+      class="grid sm:gap-x-8 gap-x-4 md:grid-cols-2"
       @submit.prevent="submitForm"
     >
       <div>
