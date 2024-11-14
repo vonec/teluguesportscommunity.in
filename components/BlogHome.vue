@@ -58,7 +58,7 @@ export default {
   async fetch() {
     // Check the page query parameter in the URL and set to 1 if not present
     this.page = parseInt(this.$route.query.page) || 1;
-    this.limit = parseInt(this.$route.query.limit) || 6;
+    this.limit = parseInt(this.$route.query.limit) || 8;
 
     try {
       // Fetch data from the API using the current page

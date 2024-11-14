@@ -96,7 +96,7 @@ export default {
 
   async fetch() {
     this.page = parseInt(this.$route.query.page) || 1;
-    this.limit = parseInt(this.$route.query.limit) || 6;
+    this.limit = parseInt(this.$route.query.limit) || 8;
 
     try {
       this.loading = true; // Start loading
