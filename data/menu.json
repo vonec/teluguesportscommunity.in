@@ -20,7 +20,6 @@
     "submenu": [
       { "title": "Upcoming", "link": "/events/upcoming/" },
       { "title": "Past Events", "link": "/events/pastevents/" },
-      { "title": "Event Calendar", "link": "/events/eventcalender/" },
       { "title": "Live Streams", "link": "/events/livestreams/" }
     ]
   },
