@@ -64,7 +64,7 @@ export async function onRequestGet(context) {
     "Content-Type",
     response.headers.get("Content-Type") || "image/jpeg"
   );
-  headers.set("Cache-Control", "public, max-age=86400"); // Cache for 24 hours
+  headers.set("Cache-Control", "public, max-age=2592000"); // Cache for 24 hours
 
   // Create a response with only the required headers
   const proxiedResponse = new Response(response.body, {
