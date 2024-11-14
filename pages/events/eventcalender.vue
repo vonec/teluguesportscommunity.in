@@ -15,8 +15,6 @@
       :BreadcrumbSubTitle="BreadcrumbSubTitle"
     />
 
-    <PopularGame />
-
     <EventCalender />
 
     <ContactBanner :paddingTop="paddingTop" />

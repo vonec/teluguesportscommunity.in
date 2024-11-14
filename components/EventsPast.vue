@@ -1,9 +1,6 @@
 <template>
   <!-- Gaming World Section Start -->
-  <div
-    class="lg:mb-32 md:mb-20 mb-15 bg-cover bg-center py-20"
-    style="background-image: url('/images/others/static-banner.webp')"
-  >
+  <div class="lg:mb-32 md:mb-20 mb-15 bg-cover bg-center py-20">
     <div class="container">
       <TitleSection :title="title" />
     </div>
@@ -27,6 +24,7 @@
             class="h-40 w-40 mx-auto rounded-full border-4 border-gray-700"
             :src="service.imgSrc"
             :alt="service.name"
+            loading="lazy"
             @error="handleImageError"
           />
         </div>

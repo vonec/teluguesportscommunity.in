@@ -20,6 +20,7 @@
               <img
                 :src="blog.imgSrc"
                 :alt="blog.title"
+                loading="lazy"
                 @error="handleImageError"
               />
             </a>

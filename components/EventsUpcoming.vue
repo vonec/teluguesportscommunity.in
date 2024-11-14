@@ -1,10 +1,7 @@
 span
 <template>
   <!-- Gaming World Section Start -->
-  <div
-    class="mb-15 bg-cover bg-center"
-    style="background-image: url('/images/others/static-banner.webp')"
-  >
+  <div class="mb-15 bg-cover bg-center">
     <div class="container">
       <TitleSection :title="title" />
     </div>
@@ -28,6 +25,7 @@ span
             class="h-40 w-40 mx-auto rounded-full border-4 border-gray-700"
             :src="service.imgSrc"
             :alt="service.name"
+            loading="lazy"
             @error="handleImageError"
           />
         </div>

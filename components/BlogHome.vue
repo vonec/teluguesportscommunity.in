@@ -17,6 +17,7 @@
               <img
                 :src="blog.imgSrc"
                 :alt="blog.alt"
+                loading="lazy"
                 @error="handleImageError"
               />
             </a>
@@ -97,6 +98,7 @@ export default {
         "/images/blog/blog-grid-6.webp",
       ];
 
+      console.log(event.target.src);
       // Select a random image from the backupImages array
       const randomIndex = Math.floor(Math.random() * backupImages.length);
       event.target.src = backupImages[randomIndex];
