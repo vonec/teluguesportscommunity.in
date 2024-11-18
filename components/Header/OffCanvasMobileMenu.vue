@@ -10,7 +10,7 @@
       <div class="flex justify-between pb-8">
         <!-- Button Start -->
         <NuxtLink
-          to="/signup"
+          to="/contact"
           style="background-image: url(/images/others/btn-signup.png)"
           class="signup-btn transition-all group"
         >
