@@ -2,7 +2,7 @@
   <div class="flex items-center">
     <!-- Button Start -->
     <NuxtLink
-      to="/signup"
+      to="/contact"
       style="background-image: url(/images/others/btn-signup.png)"
       class="signup-btn transition-all group hidden sm:flex"
     >
