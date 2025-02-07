@@ -33,7 +33,7 @@ export default {
           className: "icofont-instagram text-white",
         },
         {
-          href: "https://discord.gg/JP9nkJmEft",
+          href: "https://discord.gg/akk2nDcCgQ",
           BgShape: "/images/icon/discord.png",
           className: "icofont- text-white",
         },
