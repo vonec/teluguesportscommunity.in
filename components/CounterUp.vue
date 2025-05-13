@@ -38,7 +38,7 @@ export default {
       counter: [
         {
           startVal: 0,
-          endVal: 5,
+          endVal: 105,
           className: "text-yellow",
           text: "Events",
         },
@@ -56,7 +56,7 @@ export default {
         },
         {
           startVal: 0,
-          endVal: 110,
+          endVal: 124,
           className: "text-primary",
           text: "Pro Teams",
         },
