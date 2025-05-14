@@ -38,7 +38,7 @@ export default {
       counter: [
         {
           startVal: 0,
-          endVal: 105,
+          endVal: 10,
           className: "text-yellow",
           text: "Events",
         },
