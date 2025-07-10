@@ -15,9 +15,9 @@
       :BreadcrumbSubTitle="BreadcrumbSubTitle"
     />
 
-    <AboutUs />
+    <EsportxMenu />
 
-    <TecJourney />
+    <Intro />
 
     <ContactBanner :paddingTop="paddingTop" />
 
@@ -32,13 +32,8 @@ export default {
     OffCanvasMobileMenu: () =>
       import("@/components/Header/OffCanvasMobileMenu"),
     Breadcrumb: () => import("@/components/Breadcrumb"),
-    AboutUs: () => import("@/components/eSportX/Intro"),
+    Intro: () => import("@/components/eSportX/Intro"),
     CounterUp: () => import("@/components/eSportX/Countdown"),
-    TecJourney: () => import("@/components/eSportX/Section"),
-    TecJourney: () => import("@/components/eSportX/Schedule"),
-    LiveStream: () => import("@/components/LiveStream"),
-    GamerTeam: () => import("@/components/GamerTeam"),
-    Testimonial: () => import("@/components/Testimonial"),
     ContactBanner: () => import("@/components/ContactBanner"),
     Footer: () => import("@/components/Footer"),
   },
@@ -47,7 +42,7 @@ export default {
       navOpen: false,
       BreadcrumbTitle: "eSportX",
       BreadcrumbSubTitle: "Fuel the Hype. Feel the Heat. ",
-      paddingTop: "pt-32",
+      paddingTop: "pt-18",
     };
   },
 };

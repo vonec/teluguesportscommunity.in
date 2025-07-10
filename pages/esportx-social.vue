@@ -17,7 +17,9 @@
 
     <EsportxMenu />
 
-    <Intro />
+    <div class="container mx-auto flex items-center justify-between">
+      Social
+    </div>
 
     <ContactBanner :paddingTop="paddingTop" />
 
@@ -32,8 +34,7 @@ export default {
     OffCanvasMobileMenu: () =>
       import("@/components/Header/OffCanvasMobileMenu"),
     Breadcrumb: () => import("@/components/Breadcrumb"),
-    Intro: () => import("@/components/eSportX/Intro"),
-    CounterUp: () => import("@/components/eSportX/Countdown"),
+    ScheduleB: () => import("@/components/eSportX/Schedule"),
     ContactBanner: () => import("@/components/ContactBanner"),
     Footer: () => import("@/components/Footer"),
   },

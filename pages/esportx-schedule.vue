@@ -17,7 +17,7 @@
 
     <EsportxMenu />
 
-    <Intro />
+    <ScheduleB />
 
     <ContactBanner :paddingTop="paddingTop" />
 
@@ -32,8 +32,7 @@ export default {
     OffCanvasMobileMenu: () =>
       import("@/components/Header/OffCanvasMobileMenu"),
     Breadcrumb: () => import("@/components/Breadcrumb"),
-    Intro: () => import("@/components/eSportX/Intro"),
-    CounterUp: () => import("@/components/eSportX/Countdown"),
+    ScheduleB: () => import("@/components/eSportX/Schedule"),
     ContactBanner: () => import("@/components/ContactBanner"),
     Footer: () => import("@/components/Footer"),
   },
@@ -42,7 +41,7 @@ export default {
       navOpen: false,
       BreadcrumbTitle: "eSportX",
       BreadcrumbSubTitle: "Fuel the Hype. Feel the Heat. ",
-      paddingTop: "pt-18",
+      paddingTop: "pt-32",
     };
   },
 };
