@@ -2,12 +2,13 @@
   <nav class="text-white px-4 py-3 mb-10 text-xl font-bold shadow">
     <div class="container mx-auto flex items-center justify-between">
       <!-- Logo -->
-      <div class="text-xl font-bold">
+      <div class="text-xl font-bold md:hidden">
         <NuxtLink to="/esportx" class="hover:text-teal-400 transition"
           >eSportEx</NuxtLink
         >
       </div>
 
+      <div>&nbsp;</div>
       <!-- Mobile toggle -->
       <button @click="open = !open" class="md:hidden focus:outline-none">
         <svg
@@ -30,27 +31,34 @@
         :class="{ block: open, hidden: !open }"
         class="w-full md:flex md:items-center md:w-auto md:space-x-6 hidden"
       >
-        <NuxtLink to="/esportx" class="block py-2 md:py-0 hover:text-teal-400"
+        <NuxtLink
+          to="/esportx"
+          class="block py-3 px-3 rounded hover:text-[#B153F0]"
+          exact-active-class="bg-[#B153F0] hover:text-white text-white rounded px-3 py-3"
           >About</NuxtLink
         >
         <NuxtLink
           to="/esportx-schedule"
-          class="block py-2 md:py-0 hover:text-teal-400"
+          class="block py-3 px-3 rounded hover:text-[#B153F0]"
+          exact-active-class="bg-[#B153F0] hover:text-white text-white rounded px-3 py-3"
           >Schedule</NuxtLink
         >
         <NuxtLink
           to="/esportx-events"
-          class="block py-2 md:py-0 hover:text-teal-400"
+          class="block py-3 px-3 rounded hover:text-[#B153F0]"
+          exact-active-class="bg-[#B153F0] hover:text-white text-white rounded px-3 py-3"
           >Events</NuxtLink
         >
         <NuxtLink
           to="/esportx-sponsors"
-          class="block py-2 md:py-0 hover:text-teal-400"
+          class="block py-3 px-3 rounded hover:text-[#B153F0]"
+          exact-active-class="bg-[#B153F0] hover:text-white text-white rounded px-3 py-3"
           >Become a Sponsor</NuxtLink
         >
         <NuxtLink
           to="/esportx-social"
-          class="block py-2 md:py-0 hover:text-teal-400"
+          class="block py-3 px-3 rounded hover:text-[#B153F0]"
+          exact-active-class="bg-[#B153F0] hover:text-white text-white rounded px-3 py-3"
           >Social Feed</NuxtLink
         >
       </div>

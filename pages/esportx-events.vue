@@ -27,7 +27,7 @@
           </h2>
 
           <!-- Row 1: BGMI -->
-          <div class="flex flex-col md:flex-row items-start gap-6 mb-10">
+          <div class="flex flex-col md:flex-row items-center gap-6 mb-10">
             <!-- Logo/Image -->
             <div class="w-full md:w-1/3 flex justify-center">
               <img
@@ -54,7 +54,7 @@
           </div>
 
           <!-- Row 2: FREEFIRE MAX -->
-          <div class="flex flex-col md:flex-row items-start gap-6 mb-10">
+          <div class="flex flex-col md:flex-row items-center gap-6 mb-10">
             <!-- Logo/Image -->
             <div class="w-full md:w-1/3 flex justify-center">
               <img
