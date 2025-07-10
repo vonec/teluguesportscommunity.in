@@ -14,7 +14,7 @@
           About eSportX
         </h5>
       </div>
-      <div class="about_desc mb-10">
+      <div class="about_desc mb-10 text-xl">
         <p>
           eSportX is the first telugu esports event hosted in collaboration with
           <strong>SportEx 8th Edition</strong> and <strong>HITEX</strong>. Set

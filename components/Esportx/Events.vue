@@ -5,7 +5,7 @@
       <h2
         class="text-3xl lg:text-5xl font-blackOps uppercase text-center mb-12"
       >
-        Event Schedule
+        Event Schedule – eSportX 2025
       </h2>
 
       <div class="flex flex-col lg:flex-row mb-10 gap-3">
@@ -44,6 +44,20 @@
               Witness the best Free Fire MAX squads clash in a full-day
               championship showcasing aggressive plays and regional pride.
             </p>
+
+            <!-- Activities -->
+            <div class="mt-6">
+              <h4 class="text-xl font-semibold text-white mb-2">
+                Day 1 Activities
+              </h4>
+              <ul class="list-disc list-inside text-gray-300">
+                <li>Free Fire MAX Grand Finals Tournament</li>
+                <li>Influencer Meet & Greet Zone</li>
+                <li>Brand Partner Showcases & Booth Games</li>
+                <li>Live Commentary + Match Breakdown</li>
+                <li>Free Fire Merchandise Drops</li>
+              </ul>
+            </div>
           </div>
         </div>
 
@@ -82,6 +96,20 @@
               Top BGMI teams battle across classic maps in one of India’s most
               competitive esports marathons.
             </p>
+
+            <!-- Activities -->
+            <div class="mt-6">
+              <h4 class="text-xl font-semibold text-white mb-2">
+                Day 2 Activities
+              </h4>
+              <ul class="list-disc list-inside text-gray-300">
+                <li>BGMI Grand Finals Tournament</li>
+                <li>Creator Stage Interactions</li>
+                <li>Branding Shows & LED Visuals</li>
+                <li>Post-Match Player Panel Interviews</li>
+                <li>Giveaways & Closing Ceremony</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
