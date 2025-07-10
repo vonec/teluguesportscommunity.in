@@ -29,9 +29,9 @@
         <!-- Logo/Image -->
         <div class="w-full md:w-1/3 flex justify-center">
           <img
-            src="/static/images/bgmi.png"
+            src="/images/esportex/bgmi.png"
             alt="BGMI Logo"
-            class="h-24 w-24 object-contain"
+            class="h-60 w-60 object-contain"
           />
         </div>
         <!-- Details Text -->
@@ -48,9 +48,9 @@
         <!-- Logo/Image -->
         <div class="w-full md:w-1/3 flex justify-center">
           <img
-            src="/static/images/bgmi.png"
+            src="/images/esportex/ff.png"
             alt="FREEFIRE MAX LOGO"
-            class="h-24 w-24 object-contain"
+            class="h-60 w-60 object-contain"
           />
         </div>
         <!-- Details Text -->

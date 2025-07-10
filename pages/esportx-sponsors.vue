@@ -17,9 +17,29 @@
 
     <EsportxMenu />
 
-    <div class="container mx-auto flex items-center justify-between">
-      sponsors
-    </div>
+    <div class="container mx-auto flex flex-col lg:flex-row items-center justify-between gap-6 bg-white/5 backdrop-blur-sm rounded-xl p-8 text-white mt-20">
+  <!-- Left: Sponsor Info Text -->
+  <div class="flex-1">
+    <h3 class="text-3xl font-bold mb-4 text-yellow">Partner with eSportX 2025</h3>
+    <p class="text-gray-300 text-lg">
+      Showcase your brand to 25,000+ live attendees and millions of digital viewers.
+      Join the country’s most dynamic esports + sports exhibition as a Title Sponsor,
+      Co-Partner, or Activation Collaborator.
+    </p>
+  </div>
+
+  <!-- Right: CTA Button -->
+  <div class="mt-6 lg:mt-0">
+    <a
+      href="https://your-sponsor-form-link.com"
+      target="_blank"
+      class="inline-block px-8 py-4 bg-yellow-500 hover:bg-yellow-600 text-black font-semibold text-lg rounded-full transition-all duration-300"
+    >
+      Become a Sponsor
+    </a>
+  </div>
+</div>
+
 
     <ContactBanner :paddingTop="paddingTop" />
 
