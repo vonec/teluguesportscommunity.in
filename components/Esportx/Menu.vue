@@ -34,31 +34,31 @@
         <NuxtLink
           to="/esportx"
           class="block py-3 px-3 rounded hover:text-[#B153F0]"
-          exact-active-class="bg-[#B153F0] hover:text-white text-white rounded px-3 py-3"
+          exact-active-class="bg-gradient-to-r from-[#B153F0] via-[#8E39E0] to-[#6A22C8] text-white hover:text-white rounded px-3 py-2 shadow-md"
           >About</NuxtLink
         >
         <NuxtLink
           to="/esportx-schedule"
           class="block py-3 px-3 rounded hover:text-[#B153F0]"
-          exact-active-class="bg-[#B153F0] hover:text-white text-white rounded px-3 py-3"
+          exact-active-class="bg-gradient-to-r from-[#B153F0] via-[#8E39E0] to-[#6A22C8] text-white hover:text-white rounded px-3 py-2 shadow-md"
           >Schedule</NuxtLink
         >
         <NuxtLink
           to="/esportx-events"
           class="block py-3 px-3 rounded hover:text-[#B153F0]"
-          exact-active-class="bg-[#B153F0] hover:text-white text-white rounded px-3 py-3"
+          exact-active-class="bg-gradient-to-r from-[#B153F0] via-[#8E39E0] to-[#6A22C8] text-white hover:text-white rounded px-3 py-2 shadow-md"
           >Events</NuxtLink
         >
         <NuxtLink
           to="/esportx-sponsors"
           class="block py-3 px-3 rounded hover:text-[#B153F0]"
-          exact-active-class="bg-[#B153F0] hover:text-white text-white rounded px-3 py-3"
+          exact-active-class="bg-gradient-to-r from-[#B153F0] via-[#8E39E0] to-[#6A22C8] text-white hover:text-white rounded px-3 py-2 shadow-md"
           >Become a Sponsor</NuxtLink
         >
         <NuxtLink
           to="/esportx-social"
           class="block py-3 px-3 rounded hover:text-[#B153F0]"
-          exact-active-class="bg-[#B153F0] hover:text-white text-white rounded px-3 py-3"
+          exact-active-class="bg-gradient-to-r from-[#B153F0] via-[#8E39E0] to-[#6A22C8] text-white hover:text-white rounded px-3 py-2 shadow-md"
           >Social Feed</NuxtLink
         >
       </div>
