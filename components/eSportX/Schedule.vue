@@ -1,6 +1,6 @@
 <template>
   <!-- Event Schedule Section Start -->
-  <section id="schedule" class="bg-transparent py-20 text-white">
+  <section id="schedule" class="bg-transparent text-white">
     <div class="container mx-auto px-4">
       <h2
         class="text-3xl lg:text-5xl font-blackOps uppercase text-center mb-12"
