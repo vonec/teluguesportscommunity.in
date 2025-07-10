@@ -3,10 +3,7 @@
   <div class="container flex items-center space-x-4 flex-col lg:flex-row">
     <div class="w-full lg:w-1/2 mb-10 lg:mb-0">
       <div class="sm:mr-12 mr-0 text-center relative">
-        <img
-          src="/images/others/about-thumb.png"
-          alt="Telugu eSports Community"
-        />
+        <img src="/images/esportex/logo.png" alt="eSportX" />
       </div>
     </div>
     <div class="w-full lg:w-1/2">
@@ -19,37 +16,17 @@
       </div>
       <div class="about_desc mb-10">
         <p>
-         eSportX is TEC’s flagship esports event hosted in collaboration with Sportex 2025 and HITEX. Set within India’s largest sports and fitness expo, this two-day spectacle (22–23 August 2025) marks a historic integration of competitive gaming into the mainstream sporting arena.
-
-With curated tournaments in BGMI and Free Fire MAX, a LAN Grand Finals, and high-energy fan zones, eSportX bridges physical and digital sports for a unified, high-impact audience experience.
+          eSportX is the first telugu esports event hosted in collaboration with
+          <strong>SportEx 8th Edition</strong> and <strong>HITEX</strong>. Set
+          within India’s largest sports and fitness expo, this two-day spectacle
+          (22–23 August 2025) marks a historic integration of competitive gaming
+          into the mainstream sporting arena. With curated tournaments in BGMI
+          and Free Fire MAX, a LAN Grand Finals, and high-energy fan zones,
+          eSportX bridges physical and digital sports for a unified, high-impact
+          audience experience.
         </p>
-        <div class="xl:mb-2 sm:mb-2 mt-6 mb-2">
-          <h3
-            class="xl:text-2xl text-xl text-white uppercase font-bold leading-8"
-          >
-            Our Commitment at eSportX
-          </h3>
-        </div>
 
-        <p>
-          We are committed to building a high-impact esports platform that puts regional talent on the national stage. At eSportX, our focus is on creating authentic, competitive, and community-powered tournaments that elevate the Telugu esports ecosystem.
-
-With every match, creator spotlight, and LAN final—we aim to bridge the gap between grassroots gaming and professional opportunities, while setting a new benchmark for integrity, transparency, and scalability in Indian esports.
-        </p>
-      </div>
-      <div class="about_btn">
-        <n-link
-          to="/contact"
-          class="group primary-btn opacity-100 transition-all"
-          style="background-image: url(/images/others/btn-bg.png)"
-        >
-          {{ btnName }}
-          <img
-            src="/images/icon/arrrow-icon.webp"
-            alt="Arrow Icon"
-            class="ml-3 w-5 h-5 group-hover:ml-4 transition-all"
-          />
-        </n-link>
+        <CounterUp />
       </div>
     </div>
   </div>
@@ -60,6 +37,8 @@ import CoolLightBox from "vue-cool-lightbox";
 import "vue-cool-lightbox/dist/vue-cool-lightbox.min.css";
 export default {
   components: {
+    CounterUp: () => import("@/components/eSportX/Countdown"),
+
     CoolLightBox,
   },
   data() {

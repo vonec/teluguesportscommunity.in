@@ -19,8 +19,6 @@
 
     <TecJourney />
 
-    <CounterUp />
-
     <ContactBanner :paddingTop="paddingTop" />
 
     <Footer />
@@ -48,7 +46,7 @@ export default {
     return {
       navOpen: false,
       BreadcrumbTitle: "eSportX",
-      BreadcrumbSubTitle: "Where Competitive Spirit Meets Innovation",
+      BreadcrumbSubTitle: "Fuel the Hype. Feel the Heat. ",
       paddingTop: "pt-32",
     };
   },
