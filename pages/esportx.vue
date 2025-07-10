@@ -15,7 +15,7 @@
       :BreadcrumbSubTitle="BreadcrumbSubTitle"
     />
 
-    <Intro />
+    <AboutUs />
 
     <TecJourney />
 
@@ -34,9 +34,10 @@ export default {
     OffCanvasMobileMenu: () =>
       import("@/components/Header/OffCanvasMobileMenu"),
     Breadcrumb: () => import("@/components/Breadcrumb"),
-    Intro: () => import("@/components/Esportx/Intro"),
-    CounterUp: () => import("@/components/CounterUp"),
-    TecJourney: () => import("@/components/TecJourney"),
+    AboutUs: () => import("@/components/eSportX/Intro"),
+    CounterUp: () => import("@/components/eSportX/Countdown"),
+    TecJourney: () => import("@/components/eSportX/Section"),
+    TecJourney: () => import("@/components/eSportX/Schedule"),
     LiveStream: () => import("@/components/LiveStream"),
     GamerTeam: () => import("@/components/GamerTeam"),
     Testimonial: () => import("@/components/Testimonial"),
@@ -47,7 +48,7 @@ export default {
     return {
       navOpen: false,
       BreadcrumbTitle: "eSportX",
-      BreadcrumbSubTitle: "SUB TITLE GOES HERE",
+      BreadcrumbSubTitle: "Where Competitive Spirit Meets Innovation",
       paddingTop: "pt-32",
     };
   },
