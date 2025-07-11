@@ -29,16 +29,19 @@
   </div>
 
   <!-- Right: CTA Button -->
-  <div class="mt-6 lg:mt-0">
-    <a
-      href="https://your-sponsor-form-link.com"
-      target="_blank"
-      class="inline-block px-8 py-4 bg-yellow-500 hover:bg-yellow-600 text-black font-semibold text-lg rounded-full transition-all duration-300"
-    >
-      Become a Sponsor
-    </a>
+  <div class="mt-8 lg:mt-2">
+  <a
+    href="https://teluguesportscommunity.in/contact/"
+    target="_blank"
+    rel="noopener noreferrer"
+    role="button"
+    class="inline-block px-8 py-4 bg-yellow-500 hover:bg-yellow-600 font-semibold text-lg rounded-full transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-yellow-300"
+  >
+    Become a Sponsor
+  </a>
   </div>
 </div>
+
 
 
 
