@@ -42,7 +42,7 @@
             </p>
             <p class="text-md text-white mt-4">
               Witness the best Free Fire MAX squads clash in a full-day
-              championship showcasing aggressive plays and regional pride.
+              championship showcasing aggressive plays.
             </p>
           </div>
         </div>

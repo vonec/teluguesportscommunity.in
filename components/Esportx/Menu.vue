@@ -57,7 +57,7 @@
         >
         <NuxtLink
           to="/esportx-social"
-          class="block py-3 px-3 rounded hover:text-[#B153F0]"
+          class="block hidden py-3 px-3 rounded hover:text-[#B153F0]"
           exact-active-class="bg-gradient-to-r from-[#B153F0] via-[#8E39E0] to-[#6A22C8] text-white hover:text-white rounded px-3 py-2 shadow-md"
           >Social Feed</NuxtLink
         >

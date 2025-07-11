@@ -22,23 +22,22 @@
   <div class="flex-1">
     <h3 class="text-3xl font-bold mb-4 text-yellow">Partner with eSportX 2025</h3>
     <p class="text-gray-300 text-lg">
-      Showcase your brand to 25,000+ live attendees and millions of digital viewers.
-      Join the country’s most dynamic esports + sports exhibition as a Title Sponsor,
-      Co-Partner, or Activation Collaborator.
+      Showcase your brand to 25,000+ live attendees and millions of digital viewers.<br>
+      Join the first-ever Telugu Esports Tournament, held in strategic collaboration with SportEx 2025 and HITEX.
     </p>
   </div>
 
   <!-- Right: CTA Button -->
   <div class="mt-8 lg:mt-2">
-  <a
-    href="https://teluguesportscommunity.in/contact/"
+  <nuxt-link
+    to="/contact/"
     target="_blank"
     rel="noopener noreferrer"
     role="button"
-    class="inline-block px-8 py-4 bg-yellow-500 hover:bg-yellow-600 font-semibold text-lg rounded-full transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-yellow-300"
+    class="bg-gradient-to-r from-[#B153F0] via-[#8E39E0] to-[#6A22C8] text-white hover:text-white rounded px-3 py-2 shadow-md"
   >
     Become a Sponsor
-  </a>
+  </nuxt-link>
   </div>
 </div>
 
