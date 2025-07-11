@@ -21,8 +21,6 @@
       Social
     </div>
 
-    <ContactBanner :paddingTop="paddingTop" />
-
     <Footer />
   </div>
 </template>

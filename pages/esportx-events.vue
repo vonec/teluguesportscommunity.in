@@ -133,8 +133,7 @@
       /* Optional image size control */
     </style>
 
-    <ContactBanner :paddingTop="paddingTop" />
-
+    
     <Footer />
   </div>
 </template>

@@ -19,8 +19,6 @@
 
     <ScheduleB />
 
-    <ContactBanner :paddingTop="paddingTop" />
-
     <Footer />
   </div>
 </template>

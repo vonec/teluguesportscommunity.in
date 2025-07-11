@@ -41,7 +41,6 @@
 </div>
 
 
-    <ContactBanner :paddingTop="paddingTop" />
 
     <Footer />
   </div>

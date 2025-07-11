@@ -19,8 +19,6 @@
 
     <Intro />
 
-    <ContactBanner :paddingTop="paddingTop" />
-
     <Footer />
   </div>
 </template>
