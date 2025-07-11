@@ -29,7 +29,7 @@
           <!-- Row 1: BGMI -->
           <div class="flex flex-col md:flex-row items-center gap-6 mb-10">
             <!-- Logo/Image -->
-            <div class="w-full md:w-1/3 flex justify-center">
+            <div class="flex justify-center">
               <img
                 src="/images/esportex/bgmi.png"
                 alt="BGMI Logo"
@@ -37,9 +37,7 @@
               />
             </div>
             <!-- Details Text -->
-            <div
-              class="w-full md:w-2/3 bg-white/5 backdrop-blur-sm rounded-xl p-6"
-            >
+            <div class="flex-1 bg-white/5 backdrop-blur-sm rounded-xl p-6">
               <h3 class="text-2xl font-bold text-yellow mb-2">
                 BATTLEGROUNDS MOBILE INDIA (BGMI)
               </h3>
@@ -56,7 +54,7 @@
           <!-- Row 2: FREEFIRE MAX -->
           <div class="flex flex-col md:flex-row items-center gap-6 mb-10">
             <!-- Logo/Image -->
-            <div class="w-full md:w-1/3 flex justify-center">
+            <div class="flex justify-center">
               <img
                 src="/images/esportex/ff.png"
                 alt="FREEFIRE MAX LOGO"
@@ -64,9 +62,7 @@
               />
             </div>
             <!-- Details Text -->
-            <div
-              class="w-full md:w-2/3 bg-white/5 backdrop-blur-sm rounded-xl p-6"
-            >
+            <div class="flex-1 bg-white/5 backdrop-blur-sm rounded-xl p-6">
               <h3 class="text-2xl font-bold text-primary mb-2">
                 FREEFIRE MAX (FF MAX)
               </h3>
