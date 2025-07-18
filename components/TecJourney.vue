@@ -110,6 +110,15 @@
             event in Hyderabad
           </li>
           <li><strong>Nexus Cup S1</strong> - Supported the Tournament</li>
+          <li>
+            <strong>FREEFIRE MAX</strong> - Supported Clash Of Champions S2 LAN
+            event in Hyderabad
+          </li>
+          <li><strong>Nexus Cup S2</strong> - Supported the Tournament</li>
+          <li>
+            <strong>Telugu Esports Valorant Cup</strong> - Organised the
+            Tournament
+          </li>
         </ul>
       </div>
     </div>
