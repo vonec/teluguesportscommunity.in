@@ -23,8 +23,9 @@
         <h3 class="text-2xl font-semibold">2023</h3>
         <ul class="list-disc list-outside mt-2">
           <li>
-            Managed and organized Crash Leagues to align new teams during BGIS
-            2023, facilitating smooth transitions through all rounds.
+            Managed and organized <strong>Crash Leagues - S1</strong> to align
+            new teams during BGIS 2023, facilitating smooth transitions through
+            all rounds.
           </li>
           <li>
             <strong>DreamHack 2023</strong> - Sponsored a Telugu BGMI Team
@@ -36,8 +37,9 @@
         <h3 class="text-2xl font-semibold">2024</h3>
         <ul class="list-disc list-outside mt-2">
           <li>
-            Continued to manage and organize <strong>Crash Leagues</strong> for
-            BGIS 2024, maintaining consistent support through all rounds.
+            Continued to manage and organize
+            <strong>Crash Leagues - S2</strong> for BGIS 2024, maintaining
+            consistent support through all rounds.
           </li>
           <li>
             Hosted players at <strong>BGIS 2024 LAN</strong> @ HITEX,
@@ -101,8 +103,9 @@
         <ul class="list-disc list-outside mt-2">
           <li><strong>Festival Cup S1</strong> - Supported the Tournament</li>
           <li>
-            <strong>BGIS 2025</strong> - Organized Crash Leagues for Round 1,
-            Round 2 and Round 3 teams.
+            <strong>BGIS 2025</strong> - Organized
+            <strong>Crash Leagues - S3</strong> for Round 1, Round 2 and Round 3
+            teams.
           </li>
           <li>Promoted telugu teams in BGIS 2025</li>
           <li>
