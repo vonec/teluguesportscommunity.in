@@ -5,7 +5,7 @@
       <h2
         class="text-3xl lg:text-5xl font-blackOps uppercase text-center mb-12"
       >
-        Event Schedule – eSportX 2025
+        Event Schedule – eSportEx 2025
       </h2>
 
       <div class="flex flex-col lg:flex-row mb-10 gap-3">

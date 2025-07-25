@@ -16,13 +16,13 @@
       </div>
       <div class="about_desc mb-10 text-xl">
         <p>
-          eSportX is the first telugu esports event hosted in collaboration with
+          eSportEx is the first telugu esports event hosted in collaboration with
           <strong>SportEx 8th Edition</strong> and <strong>HITEX</strong>. Set
           within India’s largest sports and fitness expo, this two-day spectacle
           (22–23 August 2025) marks a historic integration of competitive gaming
           into the mainstream sporting arena. With curated tournaments in BGMI
           and Free Fire MAX, a LAN Grand Finals, and high-energy fan zones,
-          eSportX bridges physical and digital sports for a unified, high-impact
+          eSportEx bridges physical and digital sports for a unified, high-impact
           audience experience.
         </p>
 

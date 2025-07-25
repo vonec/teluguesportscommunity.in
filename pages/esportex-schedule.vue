@@ -37,7 +37,7 @@ export default {
   data() {
     return {
       navOpen: false,
-      BreadcrumbTitle: "eSportX",
+      BreadcrumbTitle: "eSportEx",
       BreadcrumbSubTitle: "Fuel the Hype. Feel the Heat. ",
       paddingTop: "pt-32",
     };
