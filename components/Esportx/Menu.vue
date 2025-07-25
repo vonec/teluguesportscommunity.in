@@ -3,7 +3,7 @@
     <div class="container mx-auto flex items-center justify-between">
       <!-- Logo -->
       <div class="text-xl font-bold md:hidden">
-        <NuxtLink to="/esportx" class="hover:text-teal-400 transition"
+        <NuxtLink to="/esportex" class="hover:text-teal-400 transition"
           >eSportEx</NuxtLink
         >
       </div>
@@ -32,31 +32,31 @@
         class="w-full md:flex md:items-center md:w-auto md:space-x-6 hidden"
       >
         <NuxtLink
-          to="/esportx"
+          to="/esportex"
           class="block py-3 px-3 rounded hover:text-[#B153F0]"
           exact-active-class="bg-gradient-to-r from-[#B153F0] via-[#8E39E0] to-[#6A22C8] text-white hover:text-white rounded px-3 py-2 shadow-md"
           >About</NuxtLink
         >
         <NuxtLink
-          to="/esportx-schedule"
+          to="/esportex-schedule"
           class="block py-3 px-3 rounded hover:text-[#B153F0]"
           exact-active-class="bg-gradient-to-r from-[#B153F0] via-[#8E39E0] to-[#6A22C8] text-white hover:text-white rounded px-3 py-2 shadow-md"
           >Schedule</NuxtLink
         >
         <NuxtLink
-          to="/esportx-events"
+          to="/esportex-events"
           class="block py-3 px-3 rounded hover:text-[#B153F0]"
           exact-active-class="bg-gradient-to-r from-[#B153F0] via-[#8E39E0] to-[#6A22C8] text-white hover:text-white rounded px-3 py-2 shadow-md"
           >Events</NuxtLink
         >
         <NuxtLink
-          to="/esportx-sponsors"
+          to="/esportex-sponsors"
           class="block py-3 px-3 rounded hover:text-[#B153F0]"
           exact-active-class="bg-gradient-to-r from-[#B153F0] via-[#8E39E0] to-[#6A22C8] text-white hover:text-white rounded px-3 py-2 shadow-md"
           >Become a Sponsor</NuxtLink
         >
         <NuxtLink
-          to="/esportx-social"
+          to="/esportex-social"
           class="block hidden py-3 px-3 rounded hover:text-[#B153F0]"
           exact-active-class="bg-gradient-to-r from-[#B153F0] via-[#8E39E0] to-[#6A22C8] text-white hover:text-white rounded px-3 py-2 shadow-md"
           >Social Feed</NuxtLink

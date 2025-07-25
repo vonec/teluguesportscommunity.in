@@ -51,8 +51,8 @@
             spirit.
           </li>
           <li>
-            Distributed 200 entry tickets for the BGIS 2024 finales, supporting
-            community participation.
+            Distributed 200 entry tickets for the BGIS 2024 Grand finale,
+            supporting community participation.
           </li>
           <li><strong>TEC Grand Battle</strong> - Supported the Tournament</li>
         </ul>
