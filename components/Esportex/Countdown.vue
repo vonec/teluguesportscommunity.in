@@ -1,6 +1,6 @@
 <template>
   <!-- Countdown Section Start -->
-  <div class="container my-16 text-white text-center">
+  <div class="container border-top-2 bg-color() my-16 text-white text-center">
     <h2 class="text-3xl lg:text-5xl font-blackOps uppercase mb-8">
       Event Countdown
     </h2>

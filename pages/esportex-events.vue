@@ -15,7 +15,7 @@
       :BreadcrumbSubTitle="BreadcrumbSubTitle"
     />
 
-    <EsportxMenu />
+    <EsportexMenu />
 
     <template>
       <section id="activities" class="bg-transparent py-20 text-white">

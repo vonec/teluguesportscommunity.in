@@ -1,9 +1,11 @@
 <template>
   <!-- About Section Start -->
-  <div class="container flex items-center space-x-4 flex-col lg:flex-row">
+  <div class="container flex items-start space-x-4 flex-col lg:flex-row">
     <div class="w-full lg:w-1/2 mb-10 lg:mb-0">
       <div class="sm:mr-12 mr-0 text-center relative">
-        <img src="/images/esportex/logo.png" alt="eSportX" />
+        <img src="/images/esportex/logo.png?Acbd" alt="eSportX" />
+
+        <CounterUp />
       </div>
     </div>
     <div class="w-full lg:w-1/2">
@@ -26,8 +28,6 @@
           Esportex bridges physical and digital sports for a unified,
           high-impact audience experience.
         </p>
-
-        <CounterUp />
       </div>
     </div>
   </div>

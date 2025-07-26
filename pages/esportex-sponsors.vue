@@ -15,7 +15,7 @@
       :BreadcrumbSubTitle="BreadcrumbSubTitle"
     />
 
-    <EsportxMenu />
+    <EsportexMenu />
 
     <div
       class="container mx-auto flex flex-col lg:flex-row items-center justify-between gap-6 bg-white/5 backdrop-blur-sm rounded-xl p-8 text-white mt-20"

@@ -15,7 +15,7 @@
       :BreadcrumbSubTitle="BreadcrumbSubTitle"
     />
 
-    <EsportxMenu />
+    <EsportexMenu />
 
     <div class="container mx-auto flex items-center justify-between">
       Social

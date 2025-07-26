@@ -15,7 +15,7 @@
       :BreadcrumbSubTitle="BreadcrumbSubTitle"
     />
 
-    <EsportxMenu />
+    <EsportexMenu />
 
     <Intro />
 
