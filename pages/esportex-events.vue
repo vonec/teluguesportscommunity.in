@@ -144,14 +144,14 @@ export default {
     OffCanvasMobileMenu: () =>
       import("@/components/Header/OffCanvasMobileMenu"),
     Breadcrumb: () => import("@/components/Breadcrumb"),
-    ScheduleB: () => import("@/components/eSportX/Schedule"),
+    ScheduleB: () => import("@/components/Esportex/Schedule"),
     ContactBanner: () => import("@/components/ContactBanner"),
     Footer: () => import("@/components/Footer"),
   },
   data() {
     return {
       navOpen: false,
-      BreadcrumbTitle: "eSporteX",
+      BreadcrumbTitle: "Esportex",
       BreadcrumbSubTitle: "Fuel the Hype. Feel the Heat. ",
       paddingTop: "pt-18",
     };

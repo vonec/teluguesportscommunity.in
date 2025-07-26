@@ -7,12 +7,30 @@
       </h2>
 
       <!-- Sponsor Logos Grid -->
-      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 justify-items-center mb-16">
+      <div
+        class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 justify-items-center mb-16"
+      >
         <!-- Replace these with actual sponsor logos -->
-        <img src="/sponsors/logo1.png" alt="Sponsor 1" class="h-16 object-contain" />
-        <img src="/sponsors/logo2.png" alt="Sponsor 2" class="h-16 object-contain" />
-        <img src="/sponsors/logo3.png" alt="Sponsor 3" class="h-16 object-contain" />
-        <img src="/sponsors/logo4.png" alt="Sponsor 4" class="h-16 object-contain" />
+        <img
+          src="/sponsors/logo1.png"
+          alt="Sponsor 1"
+          class="h-16 object-contain"
+        />
+        <img
+          src="/sponsors/logo2.png"
+          alt="Sponsor 2"
+          class="h-16 object-contain"
+        />
+        <img
+          src="/sponsors/logo3.png"
+          alt="Sponsor 3"
+          class="h-16 object-contain"
+        />
+        <img
+          src="/sponsors/logo4.png"
+          alt="Sponsor 4"
+          class="h-16 object-contain"
+        />
         <!-- Add more logos as needed -->
       </div>
 
@@ -31,13 +49,3 @@
   </section>
   <!-- Sponsorship Section End -->
 </template>
-
-<script>
-export default {
-  name: "SponsorSection",
-};
-</script>
-
-<style scoped>
-/* You can customize the height or style of logos here if needed */
-</style>

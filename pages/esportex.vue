@@ -30,8 +30,8 @@ export default {
     OffCanvasMobileMenu: () =>
       import("@/components/Header/OffCanvasMobileMenu"),
     Breadcrumb: () => import("@/components/Breadcrumb"),
-    Intro: () => import("@/components/eSportX/Intro"),
-    CounterUp: () => import("@/components/eSportX/Countdown"),
+    Intro: () => import("@/components/Esportex/Intro"),
+    CounterUp: () => import("@/components/Esportex/Countdown"),
     ContactBanner: () => import("@/components/ContactBanner"),
     Footer: () => import("@/components/Footer"),
   },
