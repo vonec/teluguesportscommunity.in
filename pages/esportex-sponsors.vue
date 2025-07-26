@@ -17,32 +17,35 @@
 
     <EsportxMenu />
 
-    <div class="container mx-auto flex flex-col lg:flex-row items-center justify-between gap-6 bg-white/5 backdrop-blur-sm rounded-xl p-8 text-white mt-20">
-  <!-- Left: Sponsor Info Text -->
-  <div class="flex-1">
-    <h3 class="text-3xl font-bold mb-4 text-yellow">Partner with eSportX 2025</h3>
-    <p class="text-gray-300 text-lg">
-      Showcase your brand to 25,000+ live attendees and millions of digital viewers.<br>
-      Join the first-ever Telugu Esports Tournament, held in strategic collaboration with SportEx 2025 and HITEX.
-    </p>
-  </div>
+    <div
+      class="container mx-auto flex flex-col lg:flex-row items-center justify-between gap-6 bg-white/5 backdrop-blur-sm rounded-xl p-8 text-white mt-20"
+    >
+      <!-- Left: Sponsor Info Text -->
+      <div class="flex-1">
+        <h3 class="text-3xl font-bold mb-4 text-yellow">
+          Partner with eSportX 2025
+        </h3>
+        <p class="text-gray-300 text-lg">
+          Showcase your brand to 25,000+ live attendees and millions of digital
+          viewers.<br />
+          Join the first-ever Telugu Esports Tournament, held in strategic
+          collaboration with SportEx 2025 and HITEX.
+        </p>
+      </div>
 
-  <!-- Right: CTA Button -->
-  <div class="mt-8 lg:mt-2">
-  <nuxt-link
-    to="/contact/"
-    target="_blank"
-    rel="noopener noreferrer"
-    role="button"
-    class="bg-gradient-to-r from-[#B153F0] via-[#8E39E0] to-[#6A22C8] text-white hover:text-white rounded px-3 py-2 shadow-md"
-  >
-    Become a Sponsor
-  </nuxt-link>
-  </div>
-</div>
-
-
-
+      <!-- Right: CTA Button -->
+      <div class="mt-8 lg:mt-2">
+        <nuxt-link
+          to="/contact/"
+          target="_blank"
+          rel="noopener noreferrer"
+          role="button"
+          class="bg-gradient-to-r from-[#B153F0] via-[#8E39E0] to-[#6A22C8] text-white hover:text-white rounded px-3 py-2 shadow-md"
+        >
+          Become a Sponsor
+        </nuxt-link>
+      </div>
+    </div>
 
     <Footer />
   </div>
@@ -62,7 +65,7 @@ export default {
   data() {
     return {
       navOpen: false,
-      BreadcrumbTitle: "eSportX",
+      BreadcrumbTitle: "eSporteX",
       BreadcrumbSubTitle: "Fuel the Hype. Feel the Heat. ",
       paddingTop: "pt-18",
     };
