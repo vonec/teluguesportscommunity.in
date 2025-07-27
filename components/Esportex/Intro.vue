@@ -1,6 +1,6 @@
 <template>
   <!-- About Section Start -->
-  <div class="container flex items-start space-x-4 flex-col lg:flex-row">
+  <div class="container flex items-start md:space-x-4 flex-col lg:flex-row">
     <div class="w-full lg:w-1/2 mb-10 lg:mb-0">
       <div class="sm:mr-12 mr-0 text-center relative">
         <img src="/images/esportex/logo.png?Acbd" alt="eSportX" />
@@ -29,26 +29,41 @@
           high-impact audience experience.
         </p>
       </div>
-      <div class="flex flex-col md:flex-row justify-center items-center gap-8 p-6">
-  <!-- Image 1 -->
-  <div class="flex flex-col items-center">
-    <img src="/images/esportex/esportex-bgmi.png" alt="Esportex BGMI" class="w-64 h-auto rounded shadow-md mb-4" />
-       <a href="https://game7.in/tournament/bgmi/esportex-bgmi" target="_blank"
-       class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition text-center">
-      BGMI Registration
-    </a>
-  </div>
+      <div
+        class="flex flex-col md:flex-row justify-center items-center gap-8 p-6"
+      >
+        <!-- Image 1 -->
+        <div class="flex flex-col items-center">
+          <img
+            src="/images/esportex/esportex-bgmi.png"
+            alt="Esportex BGMI"
+            class="w-64 h-auto rounded shadow-md mb-4"
+          />
+          <a
+            href="https://game7.in/tournament/bgmi/esportex-bgmi"
+            target="_blank"
+            class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition text-center"
+          >
+            BGMI Registration
+          </a>
+        </div>
 
-  <!-- Image 2 -->
-  <div class="flex flex-col items-center">
-    <img src="/images/esportex/esportex-ff.png" alt="Esportex FreeFire MAX" class="w-64 h-auto rounded shadow-md mb-4" />
-    <a href="https://forms.gle/nC8xdvjRYoifuZ4t9" target="_blank"
-       class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition text-center">
-      FreeFire Max Registration
-    </a>
-  </div>
-</div>
-
+        <!-- Image 2 -->
+        <div class="flex flex-col items-center">
+          <img
+            src="/images/esportex/esportex-ff.png"
+            alt="Esportex FreeFire MAX"
+            class="w-64 h-auto rounded shadow-md mb-4"
+          />
+          <a
+            href="https://forms.gle/nC8xdvjRYoifuZ4t9"
+            target="_blank"
+            class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition text-center"
+          >
+            FreeFire Max Registration
+          </a>
+        </div>
+      </div>
     </div>
   </div>
   <!-- About Section End -->

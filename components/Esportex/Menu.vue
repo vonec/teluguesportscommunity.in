@@ -28,8 +28,11 @@
 
       <!-- Menu links -->
       <div
-        :class="{ block: open, hidden: !open }"
-        class="w-full md:flex md:items-center md:w-auto md:space-x-6 hidden"
+        :class="[
+          open ? 'block' : 'hidden',
+          'md:flex md:items-center md:w-auto md:space-x-6',
+        ]"
+        class="w-full"
       >
         <NuxtLink
           to="/esportex"
