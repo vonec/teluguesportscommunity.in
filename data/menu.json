@@ -5,6 +5,11 @@
     "submenu": []
   },
   {
+    "title": "Esportex",
+    "link": "/esportex/",
+    "submenu": []
+  },
+  {
     "title": "Community",
     "link": "#",
     "submenu": [
