@@ -29,6 +29,26 @@
           high-impact audience experience.
         </p>
       </div>
+      <div class="flex flex-col md:flex-row justify-center items-center gap-8 p-6">
+  <!-- Image 1 -->
+  <div class="flex flex-col items-center">
+    <img src="/images/esportex/esportex-bgmi.png" alt="Esportex BGMI" class="w-64 h-auto rounded shadow-md mb-4" />
+       <a href="https://game7.in/tournament/bgmi/esportex-bgmi" target="_blank"
+       class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition text-center">
+      BGMI Registration
+    </a>
+  </div>
+
+  <!-- Image 2 -->
+  <div class="flex flex-col items-center">
+    <img src="/images/esportex/esportex-ff.png" alt="Esportex FreeFire MAX" class="w-64 h-auto rounded shadow-md mb-4" />
+    <a href="https://forms.gle/nC8xdvjRYoifuZ4t9" target="_blank"
+       class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition text-center">
+      FreeFire Max Registration
+    </a>
+  </div>
+</div>
+
     </div>
   </div>
   <!-- About Section End -->
