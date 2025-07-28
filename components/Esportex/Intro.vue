@@ -13,7 +13,7 @@
         <h5
           class="text-primary text-xl uppercase font-bold pl-24 lg:mb-6 mb-4 relative before:absolute before:content-[''] before:left-0 before:top-1/2 before:-translate-y-1/2 before:transform before:h-1 before:bg-primary before:w-16"
         >
-          About eSportX
+          About eSportex
         </h5>
       </div>
       <div class="about_desc mb-10 text-xl">
