@@ -82,7 +82,7 @@ export default {
       btnName: "Play Now",
       items: [
         {
-          src: "https://teluguesportscommunity.in/eSportX",
+          src: "https://teluguesportscommunity.in/esportex/",
         },
       ],
       index: null,
